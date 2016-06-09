@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="ConnectionList_BehaviorDescriptor.java">
+      <unit at="15,0,30,0" name="SynthLang.behavior.ConnectionList_BehaviorDescriptor" />
+    </file>
+    <file name="Connection_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.Connection_BehaviorDescriptor" />
+    </file>
+    <file name="ControlList_BehaviorDescriptor.java">
+      <unit at="15,0,30,0" name="SynthLang.behavior.ControlList_BehaviorDescriptor" />
+    </file>
+    <file name="Control_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.Control_BehaviorDescriptor" />
+    </file>
+    <file name="FrontPanelList_BehaviorDescriptor.java">
+      <unit at="15,0,30,0" name="SynthLang.behavior.FrontPanelList_BehaviorDescriptor" />
+    </file>
+    <file name="FrontPanel_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.FrontPanel_BehaviorDescriptor" />
+    </file>
+    <file name="SoundList_BehaviorDescriptor.java">
+      <unit at="15,0,30,0" name="SynthLang.behavior.SoundList_BehaviorDescriptor" />
+    </file>
+    <file name="Sound_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.Sound_BehaviorDescriptor" />
+    </file>
+    <file name="Synthesizer_BehaviorDescriptor.java">
+      <unit at="17,0,38,0" name="SynthLang.behavior.Synthesizer_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
