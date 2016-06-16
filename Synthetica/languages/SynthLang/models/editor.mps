@@ -490,6 +490,9 @@
           <property role="1lJzqX" value="15" />
         </node>
       </node>
+      <node concept="3F0ifn" id="3q1rgqewzoj" role="3EZMnx">
+        <property role="3F0ifm" value="connect" />
+      </node>
       <node concept="3F1sOY" id="4fY4zucNiiz" role="3EZMnx">
         <ref role="1NtTu8" to="p57r:4fY4zucMvgW" />
         <node concept="Vb9p2" id="4fY4zucNknQ" role="3F10Kt">
@@ -501,6 +504,9 @@
         <node concept="VechU" id="4fY4zucNkrr" role="3F10Kt">
           <property role="Vb096" value="green" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="3q1rgqewzp5" role="3EZMnx">
+        <property role="3F0ifm" value="with" />
       </node>
       <node concept="3F1sOY" id="4fY4zucNijg" role="3EZMnx">
         <ref role="1NtTu8" to="p57r:4fY4zucMvp2" />

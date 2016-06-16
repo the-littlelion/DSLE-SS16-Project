@@ -37,8 +37,10 @@ public class Connection_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_cl5qlz_b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_cl5qlz_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_cl5qlz_d0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_cl5qlz_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cl5qlz_e0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_cl5qlz_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cl5qlz_g0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_cl5qlz_h0(editorContext, node));
     return editorCell;
   }
   private EditorCell createProperty_cl5qlz_a0(EditorContext editorContext, SNode node) {
@@ -119,12 +121,18 @@ public class Connection_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_cl5qlz_e0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Connection_Editor.controlNameSingleRoleHandler_cl5qlz_e0(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd74L, 0x43fe12378cc9f43cL, "controlName"), editorContext);
+  private EditorCell createConstant_cl5qlz_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "connect");
+    editorCell.setCellId("Constant_cl5qlz_e0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_cl5qlz_f0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Connection_Editor.controlNameSingleRoleHandler_cl5qlz_f0(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd74L, 0x43fe12378cc9f43cL, "controlName"), editorContext);
     return provider.createCell();
   }
-  private class controlNameSingleRoleHandler_cl5qlz_e0 extends SingleRoleCellProvider {
-    public controlNameSingleRoleHandler_cl5qlz_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class controlNameSingleRoleHandler_cl5qlz_f0 extends SingleRoleCellProvider {
+    public controlNameSingleRoleHandler_cl5qlz_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -156,12 +164,18 @@ public class Connection_Editor extends DefaultNodeEditor {
       return "<no controlName>";
     }
   }
-  private EditorCell createRefNode_cl5qlz_f0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Connection_Editor.soundNameSingleRoleHandler_cl5qlz_f0(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd74L, 0x43fe12378cc9f642L, "soundName"), editorContext);
+  private EditorCell createConstant_cl5qlz_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "with");
+    editorCell.setCellId("Constant_cl5qlz_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_cl5qlz_h0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Connection_Editor.soundNameSingleRoleHandler_cl5qlz_h0(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd74L, 0x43fe12378cc9f642L, "soundName"), editorContext);
     return provider.createCell();
   }
-  private class soundNameSingleRoleHandler_cl5qlz_f0 extends SingleRoleCellProvider {
-    public soundNameSingleRoleHandler_cl5qlz_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class soundNameSingleRoleHandler_cl5qlz_h0 extends SingleRoleCellProvider {
+    public soundNameSingleRoleHandler_cl5qlz_h0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
