@@ -13,6 +13,7 @@ public class SyntheticaController implements ActionListener {
 
   public SyntheticaController() {
     syntheticaFrame.addFrameWindowListener(new WindowAdapter() {
+      @Override
       public void windowClosing(WindowEvent evt) {
         exitProgram();
       }

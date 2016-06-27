@@ -562,13 +562,13 @@
             <node concept="liA8E" id="4xkVCYkMo4Z" role="2OqNvi">
               <ref role="37wK5l" to="sei3:~Synthesizer.add(com.jsyn.unitgen.UnitGenerator):void" resolve="add" />
               <node concept="37vLTI" id="4xkVCYkMozn" role="37wK5m">
+                <node concept="37vLTw" id="4xkVCYkMowH" role="37vLTJ">
+                  <ref role="3cqZAo" node="4xkVCYkLtPN" resolve="osc" />
+                </node>
                 <node concept="2ShNRf" id="4xkVCYkMoZF" role="37vLTx">
                   <node concept="1pGfFk" id="4xkVCYkMqNo" role="2ShVmc">
                     <ref role="37wK5l" to="z93d:~SawtoothOscillatorBL.&lt;init&gt;()" resolve="SawtoothOscillatorBL" />
                   </node>
-                </node>
-                <node concept="37vLTw" id="4xkVCYkMowH" role="37vLTJ">
-                  <ref role="3cqZAo" node="4xkVCYkLtPN" resolve="osc" />
                 </node>
               </node>
             </node>
@@ -587,13 +587,13 @@
             <node concept="liA8E" id="4xkVCYkMsKC" role="2OqNvi">
               <ref role="37wK5l" to="sei3:~Synthesizer.add(com.jsyn.unitgen.UnitGenerator):void" resolve="add" />
               <node concept="37vLTI" id="4xkVCYkMtEP" role="37wK5m">
+                <node concept="37vLTw" id="4xkVCYkMtBR" role="37vLTJ">
+                  <ref role="3cqZAo" node="4xkVCYkLuCT" resolve="lag" />
+                </node>
                 <node concept="2ShNRf" id="4xkVCYkMuyw" role="37vLTx">
                   <node concept="1pGfFk" id="4xkVCYkMuyv" role="2ShVmc">
                     <ref role="37wK5l" to="z93d:~LinearRamp.&lt;init&gt;()" resolve="LinearRamp" />
                   </node>
-                </node>
-                <node concept="37vLTw" id="4xkVCYkMtBR" role="37vLTJ">
-                  <ref role="3cqZAo" node="4xkVCYkLuCT" resolve="lag" />
                 </node>
               </node>
             </node>
@@ -1086,6 +1086,9 @@
                         <node concept="3uibUv" id="4xkVCYkOkBA" role="1tU5fm">
                           <ref role="3uigEE" to="hyam:~WindowEvent" resolve="WindowEvent" />
                         </node>
+                      </node>
+                      <node concept="2AHcQZ" id="4xkVCYkPI4v" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>

@@ -30,13 +30,11 @@
         <child id="4899373474420564803" name="yPos" index="3fcj5O" />
         <child id="4899373474420085080" name="controls" index="3fesdJ" />
       </concept>
-      <concept id="4899373474420085877" name="SynthLang.structure.Control" flags="ng" index="3fesp2">
-        <child id="4899373474420569974" name="xPos" index="3fcil1" />
-        <child id="4899373474420569970" name="height" index="3fcil5" />
-        <child id="4899373474420569979" name="yPos" index="3fcilc" />
-        <child id="4899373474420569967" name="width" index="3fcilo" />
-        <child id="4899373474420569965" name="name" index="3fcilq" />
-        <child id="4899373474420569985" name="title" index="3fcimQ" />
+      <concept id="4899373474420085877" name="SynthLang.structure.AbstractControl" flags="ng" index="3fesp2">
+        <property id="5212052969219382009" name="gridPosY" index="3swVhQ" />
+        <property id="5212052969219381400" name="width" index="3swVon" />
+        <property id="5212052969219381488" name="height" index="3swVpZ" />
+        <property id="5212052969219381579" name="gridPosX" index="3swVv4" />
       </concept>
       <concept id="4899373474420085996" name="SynthLang.structure.ConnectionList" flags="ng" index="3fesrr">
         <child id="4899373474420124517" name="connections" index="3fdB_i" />
@@ -63,6 +61,9 @@
       <concept id="4899373474420084198" name="SynthLang.structure.ControlList" flags="ng" index="3fetZh">
         <child id="4899373474420085800" name="controls" index="3fesov" />
       </concept>
+      <concept id="5212052969219383228" name="SynthLang.structure.ControlButton" flags="ng" index="3swV4N" />
+      <concept id="5212052969219382579" name="SynthLang.structure.ControlSlider" flags="ng" index="3swVeW" />
+      <concept id="5212052969219380079" name="SynthLang.structure.ControlKnob" flags="ng" index="3swVRw" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -90,69 +91,23 @@
           <property role="3cmrfH" value="0" />
         </node>
         <node concept="3fetZh" id="4fY4zucNWHC" role="3fesdJ">
-          <node concept="3fesp2" id="4fY4zucOsx0" role="3fesov">
-            <property role="TrG5h" value="knob" />
-            <node concept="Xl_RD" id="4fY4zucOsx1" role="3fcilq">
-              <property role="Xl_RC" value="myKnob01" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsx2" role="3fcilo">
-              <property role="3cmrfH" value="50" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsx3" role="3fcil5">
-              <property role="3cmrfH" value="50" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsx4" role="3fcil1">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsx5" role="3fcilc">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="Xl_RD" id="4fY4zucOsx6" role="3fcimQ">
-              <property role="Xl_RC" value="Saw Tooth" />
-            </node>
+          <node concept="3swV4N" id="4xkVCYkQqrf" role="3fesov" />
+          <node concept="3swV4N" id="4xkVCYkQtgX" role="3fesov" />
+          <node concept="3swVRw" id="4xkVCYkPYE7" role="3fesov">
+            <property role="TrG5h" value="Volume" />
+            <property role="3swVon" value="150" />
+            <property role="3swVpZ" value="150" />
+            <property role="3swVv4" value="0" />
+            <property role="3swVhQ" value="1" />
           </node>
-          <node concept="3fesp2" id="4fY4zucOsz1" role="3fesov">
-            <property role="TrG5h" value="knob" />
-            <node concept="Xl_RD" id="4fY4zucOsz2" role="3fcilq">
-              <property role="Xl_RC" value="myKnob02" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsz3" role="3fcilo">
-              <property role="3cmrfH" value="50" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsz4" role="3fcil5">
-              <property role="3cmrfH" value="50" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsz5" role="3fcil1">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOsz6" role="3fcilc">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="Xl_RD" id="4fY4zucOsz7" role="3fcimQ">
-              <property role="Xl_RC" value="Volume" />
-            </node>
+          <node concept="3swVeW" id="4xkVCYkPYRM" role="3fesov">
+            <property role="TrG5h" value="Frequency" />
+            <property role="3swVon" value="500" />
+            <property role="3swVpZ" value="50" />
+            <property role="3swVv4" value="0" />
+            <property role="3swVhQ" value="3" />
           </node>
-          <node concept="3fesp2" id="4fY4zucOmah" role="3fesov">
-            <property role="TrG5h" value="slider" />
-            <node concept="Xl_RD" id="4fY4zucOmai" role="3fcilq">
-              <property role="Xl_RC" value="mySlider" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOmaj" role="3fcilo">
-              <property role="3cmrfH" value="200" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOmak" role="3fcil5">
-              <property role="3cmrfH" value="35" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOmal" role="3fcil1">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="3cmrfG" id="4fY4zucOmam" role="3fcilc">
-              <property role="3cmrfH" value="2" />
-            </node>
-            <node concept="Xl_RD" id="4fY4zucOman" role="3fcimQ">
-              <property role="Xl_RC" value="Frequency" />
-            </node>
-          </node>
+          <node concept="3swV4N" id="4xkVCYkQqkS" role="3fesov" />
         </node>
       </node>
     </node>

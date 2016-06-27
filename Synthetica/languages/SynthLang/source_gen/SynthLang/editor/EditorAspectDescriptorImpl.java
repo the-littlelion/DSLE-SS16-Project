@@ -10,6 +10,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
+import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
@@ -21,11 +22,17 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d4ecL, "SynthLang.structure.ConnectionList"))) {
         return Collections.<ConceptEditor>singletonList(new ConnectionList_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d475L, "SynthLang.structure.Control"))) {
-        return Collections.<ConceptEditor>singletonList(new Control_Editor());
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d75fbcL, "SynthLang.structure.ControlButton"))) {
+        return Collections.<ConceptEditor>singletonList(new ControlButton_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d7536fL, "SynthLang.structure.ControlKnob"))) {
+        return Collections.<ConceptEditor>singletonList(new ControlKnob_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cde6L, "SynthLang.structure.ControlList"))) {
         return Collections.<ConceptEditor>singletonList(new ControlList_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d75d33L, "SynthLang.structure.ControlSlider"))) {
+        return Collections.<ConceptEditor>singletonList(new ControlSlider_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc63c92L, "SynthLang.structure.FrontPanel"))) {
         return Collections.<ConceptEditor>singletonList(new FrontPanel_Editor());
@@ -46,6 +53,17 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     return Collections.<ConceptEditor>emptyList();
   }
 
+  public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
+    {
+      SAbstractConcept cncpt = ((SAbstractConcept) concept);
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d475L, "SynthLang.structure.AbstractControl"))) {
+        if ("SynthLang.editor.ControlParameters".equals(editorComponentId)) {
+          return Collections.<ConceptEditorComponent>singletonList(new ControlParameters());
+        }
+      }
+    }
+    return Collections.<ConceptEditorComponent>emptyList();
+  }
 
 
 }

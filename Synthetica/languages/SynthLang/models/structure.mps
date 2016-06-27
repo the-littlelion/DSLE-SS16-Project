@@ -13,9 +13,13 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -24,6 +28,9 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -195,13 +202,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="controls" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4fY4zucLXhP" resolve="Control" />
+      <ref role="20lvS9" node="4fY4zucLXhP" resolve="AbstractControl" />
     </node>
   </node>
   <node concept="1TIwiD" id="4fY4zucLXhP">
     <property role="1pbfSe" value="792336724" />
-    <property role="TrG5h" value="Control" />
-    <property role="34LRSv" value="control" />
+    <property role="TrG5h" value="AbstractControl" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4fY4zucLXih" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -209,41 +217,21 @@
     <node concept="PrWs8" id="4fY4zucLXip" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
-    <node concept="1TJgyj" id="4fY4zucNNtH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    <node concept="1TJgyi" id="4xkVCYkPPyo" role="1TKVEl">
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="4fY4zucNNtJ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="width" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
+    <node concept="1TJgyi" id="4xkVCYkPPzK" role="1TKVEl">
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="4fY4zucNNtM" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="height" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
+    <node concept="1TJgyi" id="4xkVCYkPP_b" role="1TKVEl">
+      <property role="TrG5h" value="gridPosX" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="4fY4zucNNtQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="xPos" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNNtV" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="yPos" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNNu1" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="title" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    <node concept="1TJgyi" id="4xkVCYkPPFT" role="1TKVEl">
+      <property role="TrG5h" value="gridPosY" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="4fY4zucLXjG">
@@ -290,6 +278,27 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4fY4zucLzMi" resolve="FrontPanel" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4xkVCYkPPdJ">
+    <property role="1pbfSe" value="584302082" />
+    <property role="TrG5h" value="ControlKnob" />
+    <property role="34LRSv" value="knob" />
+    <property role="R4oN_" value="User Interface Control: Knob" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
+  </node>
+  <node concept="1TIwiD" id="4xkVCYkPPON">
+    <property role="1pbfSe" value="584299582" />
+    <property role="TrG5h" value="ControlSlider" />
+    <property role="34LRSv" value="slider" />
+    <property role="R4oN_" value="User Interface Control: Slider" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
+  </node>
+  <node concept="1TIwiD" id="4xkVCYkPPYW">
+    <property role="1pbfSe" value="584298933" />
+    <property role="TrG5h" value="ControlButton" />
+    <property role="34LRSv" value="button" />
+    <property role="R4oN_" value="User Interface Control: Button" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
   </node>
 </model>
 

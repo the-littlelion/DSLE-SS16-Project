@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
+    <file name="AbstractControl_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.AbstractControl_BehaviorDescriptor" />
+    </file>
     <file name="ConnectionList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.ConnectionList_BehaviorDescriptor" />
     </file>
     <file name="Connection_BehaviorDescriptor.java">
       <unit at="16,0,34,0" name="SynthLang.behavior.Connection_BehaviorDescriptor" />
     </file>
+    <file name="ControlButton_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.ControlButton_BehaviorDescriptor" />
+    </file>
+    <file name="ControlKnob_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.ControlKnob_BehaviorDescriptor" />
+    </file>
     <file name="ControlList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.ControlList_BehaviorDescriptor" />
     </file>
-    <file name="Control_BehaviorDescriptor.java">
-      <unit at="16,0,34,0" name="SynthLang.behavior.Control_BehaviorDescriptor" />
+    <file name="ControlSlider_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.ControlSlider_BehaviorDescriptor" />
     </file>
     <file name="FrontPanelList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.FrontPanelList_BehaviorDescriptor" />
