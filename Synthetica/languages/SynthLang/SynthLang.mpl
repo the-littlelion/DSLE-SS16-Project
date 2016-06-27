@@ -2,7 +2,7 @@
 <language namespace="SynthLang" uuid="4367d71c-7d55-4642-8148-026aeb16dfeb" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot path="${module}/models" />
+      <sourceRoot location="models" />
     </modelRoot>
   </models>
   <accessoryModels />
@@ -10,7 +10,10 @@
     <generator name="" generatorUID="SynthLang#4899373474419981456" uuid="1c71e6d1-a9e3-4b49-ae4d-022cadf32c69">
       <models>
         <modelRoot contentPath="${module}" type="default">
-          <sourceRoot path="${module}/generator/template" />
+          <sourceRoot location="generator/template" />
+        </modelRoot>
+        <modelRoot contentPath="/media/daten/workspaces/git/DSLE-SS16-Project" type="java_classes">
+          <sourceRoot location="jsyn_16_7_3.jar" />
         </modelRoot>
       </models>
       <external-templates />
