@@ -1,3 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840">
+    <file name="RunSynthetica.java">
+      <node id="4899373474420607840" at="21,0,22,0" concept="2" trace="WIDTH" />
+      <node id="4899373474420607840" at="22,0,23,0" concept="2" trace="HEIGHT" />
+      <node id="4899373474420607840" at="23,0,24,0" concept="2" trace="REGISTERED" />
+      <node id="4899373474420607840" at="26,9,27,83" concept="1" />
+      <node id="4899373474420607840" at="28,27,29,153" concept="1" />
+      <node id="4899373474420607840" at="29,153,30,21" concept="1" />
+      <node id="4899373474420607840" at="37,26,38,32" concept="4" />
+      <node id="4899373474420607840" at="38,32,39,66" concept="1" />
+      <node id="4899373474420607840" at="39,66,40,61" concept="1" />
+      <node id="4899373474420607840" at="40,61,41,47" concept="1" />
+      <node id="4899373474420607840" at="41,47,42,33" concept="1" />
+      <node id="4899373474420607840" at="42,33,43,0" concept="6" />
+      <node id="4899373474420607840" at="43,0,44,31" concept="5" />
+      <node id="4899373474420607840" at="44,31,45,0" concept="6" />
+      <node id="4899373474420607840" at="45,0,46,38" concept="1" />
+      <node id="4899373474420607840" at="46,38,47,30" concept="1" />
+      <node id="4899373474420607840" at="47,30,48,27" concept="1" />
+      <node id="4899373474420607840" at="53,25,54,28" concept="1" />
+      <node id="4899373474420607840" at="53,0,56,0" concept="3" trace="run#()V" />
+      <node id="4899373474420607840" at="51,48,56,7" concept="1" />
+      <node id="4899373474420607840" at="25,3,31,5" concept="8" />
+      <node id="4899373474420607840" at="51,0,58,0" concept="7" trace="main#([Ljava/lang/String;)V" />
+      <node id="4899373474420607840" at="37,0,50,0" concept="0" trace="RunSynthetica#()V" />
+      <scope id="4899373474420607840" at="26,9,27,83" />
+      <scope id="4899373474420607840" at="53,25,54,28" />
+      <scope id="4899373474420607840" at="28,0,30,21">
+        <var name="e" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="28,27,30,21" />
+      <scope id="4899373474420607840" at="53,0,56,0" />
+      <scope id="4899373474420607840" at="51,48,56,7" />
+      <scope id="4899373474420607840" at="25,3,31,5" />
+      <scope id="4899373474420607840" at="51,0,58,0">
+        <var name="args" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="37,26,48,27">
+        <var name="frame" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="37,0,50,0" />
+      <unit id="4899373474420607840" at="52,35,56,5" name="SynthLang.sandbox.RunSynthetica$1" />
+      <unit id="4899373474420607840" at="19,0,59,0" name="SynthLang.sandbox.RunSynthetica" />
+    </file>
+  </root>
+</debug-info>
 

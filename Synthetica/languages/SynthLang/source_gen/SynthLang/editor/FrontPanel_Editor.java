@@ -173,7 +173,7 @@ public class FrontPanel_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_syvtd4_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    style.set(StyleAttributes.FONT_SIZE, 0, 15);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");

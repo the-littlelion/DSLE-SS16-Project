@@ -490,8 +490,17 @@
           <property role="1lJzqX" value="15" />
         </node>
       </node>
-      <node concept="3F0ifn" id="3q1rgqewzoj" role="3EZMnx">
+      <node concept="3F0ifn" id="2clGGzjzEYz" role="3EZMnx">
         <property role="3F0ifm" value="connect" />
+        <node concept="Vb9p2" id="2clGGzjzEZL" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="VSNWy" id="2clGGzjzF0I" role="3F10Kt">
+          <property role="1lJzqX" value="15" />
+        </node>
+        <node concept="VechU" id="2clGGzjzF2$" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
       </node>
       <node concept="3F1sOY" id="4fY4zucNiiz" role="3EZMnx">
         <ref role="1NtTu8" to="p57r:4fY4zucMvgW" />
@@ -505,8 +514,17 @@
           <property role="Vb096" value="green" />
         </node>
       </node>
-      <node concept="3F0ifn" id="3q1rgqewzp5" role="3EZMnx">
+      <node concept="3F0ifn" id="2clGGzjzF3a" role="3EZMnx">
         <property role="3F0ifm" value="with" />
+        <node concept="Vb9p2" id="2clGGzjzF4s" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="VSNWy" id="2clGGzjzF5p" role="3F10Kt">
+          <property role="1lJzqX" value="15" />
+        </node>
+        <node concept="VechU" id="2clGGzjzF7f" role="3F10Kt">
+          <property role="Vb096" value="DARK_BLUE" />
+        </node>
       </node>
       <node concept="3F1sOY" id="4fY4zucNijg" role="3EZMnx">
         <ref role="1NtTu8" to="p57r:4fY4zucMvp2" />
@@ -623,7 +641,9 @@
         <node concept="Vb9p2" id="4fY4zucNXDw" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
-        <node concept="Vb9p2" id="4fY4zucNXEy" role="3F10Kt" />
+        <node concept="VSNWy" id="2clGGzjzvFH" role="3F10Kt">
+          <property role="1lJzqX" value="15" />
+        </node>
         <node concept="lj46D" id="4fY4zucNXBD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

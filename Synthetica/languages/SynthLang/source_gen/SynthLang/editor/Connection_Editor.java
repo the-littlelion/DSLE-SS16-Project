@@ -124,6 +124,11 @@ public class Connection_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_cl5qlz_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "connect");
     editorCell.setCellId("Constant_cl5qlz_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
+    style.set(StyleAttributes.FONT_SIZE, 0, 15);
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -167,6 +172,11 @@ public class Connection_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_cl5qlz_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "with");
     editorCell.setCellId("Constant_cl5qlz_g0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
+    style.set(StyleAttributes.FONT_SIZE, 0, 15);
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

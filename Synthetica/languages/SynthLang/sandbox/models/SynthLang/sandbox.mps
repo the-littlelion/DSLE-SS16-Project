@@ -73,7 +73,7 @@
   <node concept="3fetUD" id="4fY4zucNWHw">
     <node concept="3fdB$e" id="4fY4zucNWHx" role="3fetV3">
       <node concept="3fe2U_" id="4fY4zucNWHy" role="3fdB_J">
-        <property role="TrG5h" value="frontPanel01" />
+        <property role="TrG5h" value="frontPanel" />
         <node concept="Xl_RD" id="4fY4zucNWHz" role="3fcc7C">
           <property role="Xl_RC" value="frontPanel01" />
         </node>
@@ -91,7 +91,7 @@
         </node>
         <node concept="3fetZh" id="4fY4zucNWHC" role="3fesdJ">
           <node concept="3fesp2" id="4fY4zucOsx0" role="3fesov">
-            <property role="TrG5h" value="rotaryKnob01" />
+            <property role="TrG5h" value="knob" />
             <node concept="Xl_RD" id="4fY4zucOsx1" role="3fcilq">
               <property role="Xl_RC" value="myKnob01" />
             </node>
@@ -112,7 +112,7 @@
             </node>
           </node>
           <node concept="3fesp2" id="4fY4zucOsz1" role="3fesov">
-            <property role="TrG5h" value="rotaryKnob02" />
+            <property role="TrG5h" value="knob" />
             <node concept="Xl_RD" id="4fY4zucOsz2" role="3fcilq">
               <property role="Xl_RC" value="myKnob02" />
             </node>
