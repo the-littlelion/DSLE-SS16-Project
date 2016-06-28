@@ -18,62 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de458001-e1e5-487d-ad8e-497011bfb930" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/MainPanel_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/SubPanel_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/MainPanel_Editor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/highlightedKeyword_StyleSheet.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/ControlList_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/FrontPanelList_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/FrontPanel_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/ControlList_Editor$controlsListHandler_hhww2w_a0a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/ControlList_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanelList_Editor$frontPanelsListHandler_w5gnhl_a0a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanelList_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$controlsSingleRoleHandler_syvtd4_a0n0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$heightSingleRoleHandler_syvtd4_g0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$nameSingleRoleHandler_syvtd4_b0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$widthSingleRoleHandler_syvtd4_e0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$xPosSingleRoleHandler_syvtd4_i0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor$yPosSingleRoleHandler_syvtd4_k0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/FrontPanel_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlList_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/FrontPanelList_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/FrontPanel_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/FrontPanelList_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/FrontPanel_Editor.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/AbstractControl_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/AbstractGuiElement_BehaviorDescriptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlList_Editor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/SubPanel_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/Synthesizer_BehaviorDescriptor.class" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/Synthesizer_BehaviorDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/EditorAspectDescriptorImpl.class" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/EditorAspectDescriptorImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/Synthesizer_Editor.class" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/Synthesizer_Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/structure/StructureAspectDescriptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/structure/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/classes_gen/SynthLang/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/models/editor.mps" afterPath="$PROJECT_DIR$/languages/SynthLang/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/models/structure.mps" afterPath="$PROJECT_DIR$/languages/SynthLang/models/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/SynthLang.mpl" afterPath="$PROJECT_DIR$/languages/SynthLang/SynthLang.mpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" afterPath="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/sandbox/models/SynthLang/sandbox.mps" afterPath="$PROJECT_DIR$/languages/SynthLang/sandbox/models/SynthLang/sandbox.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/sandbox/source_gen.caches/SynthLang/sandbox/generated" afterPath="$PROJECT_DIR$/languages/SynthLang/sandbox/source_gen.caches/SynthLang/sandbox/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/editor/dependencies" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/editor/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/editor/generated" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/generated" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/structure/generated" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen.caches/SynthLang/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlButton_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlButton_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlKnob_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlKnob_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlSlider_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/ControlSlider_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/Synthesizer_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/Synthesizer_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlButton_Editor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlButton_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlKnob_Editor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlKnob_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlParameters.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlParameters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlSlider_Editor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/ControlSlider_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/EditorAspectDescriptorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/Synthesizer_Editor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/Synthesizer_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/structure/trace.info" afterPath="$PROJECT_DIR$/languages/SynthLang/source_gen/SynthLang/structure/trace.info" />
     </list>
     <ignored path="Synthetica.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -90,7 +40,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="kaurqQAABAAHKOa9ZenYK0KnpR+3ijXlDhYAABhUZW1wTW9kZWxfMTIzMzQ4MDM1MTkwOTcXSJamAAOmaEXiuQHFrm7cKMoAAC5UZW1wTW9kdWxlOTZhNjAwMDMtYTY2OC00NWUyLWI5MDEtYzVhZTZlZGMyOGNh/////6urq6taWlpaAALOq1GVJepPIpuSEDuVyowMAAAXamV0YnJhaW5zLm1wcy5sYW5nLmNvcmUAAQAAARA5bqqkAAANSU5hbWVkQ29uY2VwdAASAAEAAAEQOW7AQQAABG5hbWUAAAAA3hrYbW5QSgKzBtTRf2TDdQAAGmpldGJyYWlucy5tcHMuY29uc29sZS5iYXNlAAMV+zQFH3JaLAAAC0NvbnNvbGVSb290ABIAAAAAAAIV+zQFH3JbrwAAB2hpc3RvcnkAFfs0BR9yW7EAAA1jb21tYW5kSG9sZGVyAATicWCstEhLAAANQ29tbWFuZEhvbGRlcgASAAAAAAAACoNfKMGqAr4AAAdIaXN0b3J5ABIAAAAAAAClpaWlAASl5N5TRqNE2qqzaP3xw07QAAAhamV0YnJhaW5zLm1wcy5jb25zb2xlLmlkZUNvbW1hbmRz8maR0g3vTAauxiy5DErwpAAAHWpldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzmVpzlH92S4upKcU0SHCBBgAAJmpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRz3hrYbW5QSgKzBtTRf2TDdQEAAAAFAAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAQHKBNaYG8DdkxcmrhAMPBRoGIAACtqZXRicmFpbnMubXBzLmNvbnNvbGUuaWRlQ29tbWFuZHMuc3RydWN0dXJlcP////8HKOcS81NcPEKIrc6HyValL/sAACdqZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0cy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////Byg1mx0rd8RG35vysly+oyJUAAAkamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2Uuc3RydWN0dXJlcP////+6urq6AAAAAQABGEhU7o+Uwfvl//97AAAAAAAAAAAAAgADGEhU7o+UwfvmAAB7AAAAAAAAAAAAAH0AAhhIVO6PlMH75wABewABAAABAAAACQAAAAAAAAAAfX0=" />
+          <option name="history" value="kaurqQAABAAHKKxRWsLa20j/nurkxLZW7k0AABhUZW1wTW9kZWxfMTI1OTEwNjI0NTc3OTIXSJgrSoG9LkX9mGAEwz5dYxkAAC5UZW1wTW9kdWxlOTgyYjRhODEtYmQyZS00NWZkLTk4NjAtMDRjMzNlNWQ2MzE5/////6urq6taWlpaAALOq1GVJepPIpuSEDuVyowMAAAXamV0YnJhaW5zLm1wcy5sYW5nLmNvcmUAAQAAARA5bqqkAAANSU5hbWVkQ29uY2VwdAASAAEAAAEQOW7AQQAABG5hbWUAAAAA3hrYbW5QSgKzBtTRf2TDdQAAGmpldGJyYWlucy5tcHMuY29uc29sZS5iYXNlAAMV+zQFH3JaLAAAC0NvbnNvbGVSb290ABIAAAAAAAIV+zQFH3JbrwAAB2hpc3RvcnkAFfs0BR9yW7EAAA1jb21tYW5kSG9sZGVyAATicWCstEhLAAANQ29tbWFuZEhvbGRlcgASAAAAAAAACoNfKMGqAr4AAAdIaXN0b3J5ABIAAAAAAAClpaWlAASl5N5TRqNE2qqzaP3xw07QAAAhamV0YnJhaW5zLm1wcy5jb25zb2xlLmlkZUNvbW1hbmRz8maR0g3vTAauxiy5DErwpAAAHWpldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzmVpzlH92S4upKcU0SHCBBgAAJmpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRz3hrYbW5QSgKzBtTRf2TDdQEAAAAFAAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAQHKBNaYG8DdkxcmrhAMPBRoGIAACtqZXRicmFpbnMubXBzLmNvbnNvbGUuaWRlQ29tbWFuZHMuc3RydWN0dXJlcP////8HKOcS81NcPEKIrc6HyValL/sAACdqZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0cy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////Byg1mx0rd8RG35vysly+oyJUAAAkamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2Uuc3RydWN0dXJlcP////+6urq6AAAAAQABGBfon4dEVAIh//97AAAAAAAAAAAAAgADGBfon4dEVAIiAAB7AAAAAAAAAAAAAH0AAhgX6J+HRFQCIwABewABAAABAAAACQAAAAAAAAAAfX0=" />
         </TabState>
       </list>
     </option>
@@ -147,7 +97,7 @@
         <entry file="mps://node://SynthLang.sandbox/SynthLang.sandbox/Simple Synth">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="252">
+              <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
@@ -507,12 +457,19 @@
     </navigator>
     <panes>
       <pane id="FileSystem" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SynthLang#4899373474419981456" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,7 +483,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SynthLang#4899373474419981456" />
+              <option name="myItemId" value="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/constraints.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:16c0b325-691e-4c75-b003-ecc5fb1396b3(SynthLang.typesystem) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/typesystem.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -558,11 +529,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
+              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SynthLang" />
+              <option name="myItemId" value="all models" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,76 +548,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:ae8cd3cc-c827-4e6c-a03c-92fe46780586(SynthLang.behavior) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/behavior.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SynthLang" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/sandbox/models/SynthLang/sandbox.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains.mps.project.structure.LanguageDescriptorModelProvider$LanguageModelDescriptor@3784af51" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,7 +575,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/constraints.mps}" />
+              <option name="myItemId" value="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/editor.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -687,8 +588,24 @@
               <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SynthLang" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -716,11 +633,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
+              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:16c0b325-691e-4c75-b003-ecc5fb1396b3(SynthLang.typesystem) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/typesystem.mps}" />
+              <option name="myItemId" value="$PROJECT_DIR$/languages/SynthLang/sandbox/SynthLang.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SynthLang" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/sandbox/models/SynthLang/sandbox.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,21 +660,10 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4367d71c-7d55-4642-8148-026aeb16dfeb(SynthLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:e5358f53-42a4-441b-b1d3-25313fa826de(SynthLang.structure) in IdeaFile{file:///media/daten/workspaces/git/DSLE-SS16-Project/Synthetica/languages/SynthLang/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4899373474420083870" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -885,7 +805,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1215" height="804" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49706313" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -897,18 +817,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28775167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35171387" sideWeight="0.49706313" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28775167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35171387" sideWeight="0.49706313" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34873325" sideWeight="0.5578859" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34873325" sideWeight="0.5578859" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34873325" sideWeight="0.44211408" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34873325" sideWeight="0.44211408" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -943,9 +863,257 @@
     <MESSAGE value="Generator eingefügt" />
     <MESSAGE value="Generator für MVC Pattern" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Refactoring - Language for user interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring - Language for user interface" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="mps://node://SynthLang/SynthLang.structure/Synthesizer">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="92" />
+                <property name="caretX" value="335" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/4899373474420084398" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/4899373474420084398" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang.sandbox/SynthLang.sandbox/Simple Synth">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.editor/highlightedKeyword">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/ControlButton">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="108" />
+                <property name="caretX" value="351" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219392384" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219392384" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/ControlKnob">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="92" />
+                <property name="caretX" value="335" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219406663" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219406663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/ControlSlider">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="108" />
+                <property name="caretX" value="351" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219407368" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219407368" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/SubPanel">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="68" />
+                <property name="caretX" value="311" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/4899373474420583614" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/4899373474420583614" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/MainPanel">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="76" />
+                <property name="caretX" value="319" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219882667" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219882667" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SynthLang/SynthLang.structure/AbstractGuiElement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="140" />
+                <property name="caretX" value="287" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219388757" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:cfb6075a-7d53-49af-9a34-ec620487d66f(SynthLang.editor)/5212052969219388757" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://SynthLang/SynthLang.structure/Synthesizer">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1059,35 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6296296">
           <caret line="75" column="68" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://SynthLang#4899373474419981456/com.jsyn.unitgen@java_stub/UnitOscillator">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="1c71e6d1-a9e3-4b49-ae4d-022cadf32c69/java:com.jsyn.unitgen(SynthLang#4899373474419981456/)/5212052969218182533" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="1c71e6d1-a9e3-4b49-ae4d-022cadf32c69/java:com.jsyn.unitgen(SynthLang#4899373474419981456/)/5212052969218182533" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -1242,7 +1381,7 @@
     <entry file="mps://node://SynthLang.sandbox/SynthLang.sandbox/Simple Synth">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="252">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
@@ -1484,8 +1623,8 @@
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="21" />
                 <property name="hasNonTrivialSelection" value="true" />
+                <property name="selectionEnd" value="21" />
                 <property name="caretXRelative" value="168" />
                 <property name="selectionStart" value="0" />
                 <property name="caretX" value="215" />

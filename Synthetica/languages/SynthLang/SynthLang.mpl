@@ -12,7 +12,7 @@
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
-        <modelRoot contentPath="/media/daten/workspaces/git/DSLE-SS16-Project" type="java_classes">
+        <modelRoot contentPath="/media/daten/workspaces/git/DSLE-SS16-Project/packages" type="java_classes">
           <sourceRoot location="jsyn_16_7_3.jar" />
         </modelRoot>
       </models>

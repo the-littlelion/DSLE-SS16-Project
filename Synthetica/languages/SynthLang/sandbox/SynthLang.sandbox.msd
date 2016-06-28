@@ -4,8 +4,17 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="/media/daten/workspaces/git/DSLE-SS16-Project/packages" type="java_classes">
+      <sourceRoot location="jsyn_16_7_3.jar" />
+    </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="/media/daten/workspaces/git/DSLE-SS16-Project/packages/jsyn_16_7_3.jar" />
+  </stubModelEntries>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+  </dependencies>
   <languageVersions>
     <language id="4367d71c-7d55-4642-8148-026aeb16dfeb" fqName="SynthLang" version="-1" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -15,6 +24,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="7ce12b46-a33d-4ca4-a666-c434ca518a89(SynthLang.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
