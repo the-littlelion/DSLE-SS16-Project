@@ -9,11 +9,11 @@ package SynthLang.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ControlKnob_BehaviorDescriptor extends AbstractGuiElement_BehaviorDescriptor {
+public class SubPanel_BehaviorDescriptor extends AbstractGuiElement_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {
-    return "SynthLang.structure.ControlKnob";
+    return "SynthLang.structure.SubPanel";
   }
 
 }

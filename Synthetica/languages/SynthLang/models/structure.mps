@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -47,50 +47,15 @@
   </registry>
   <node concept="1TIwiD" id="4fY4zucLzMi">
     <property role="1pbfSe" value="792441143" />
-    <property role="TrG5h" value="FrontPanel" />
-    <property role="34LRSv" value="front panel" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4fY4zucNHfv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNMcO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="width" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNMcS" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="height" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNMcX" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="xPos" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucNMd3" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="yPos" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcmrck" resolve="IntegerConstant" />
-    </node>
-    <node concept="PrWs8" id="4fY4zucLWMm" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4fY4zucLWNR" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
+    <property role="TrG5h" value="SubPanel" />
+    <property role="34LRSv" value="sub panel" />
+    <property role="R4oN_" value="User Interface: Sub-Panel" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
     <node concept="1TJgyj" id="4fY4zucLX5o" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="controls" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4fY4zucLWRA" resolve="ControlList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4fY4zucLWMu">
@@ -102,14 +67,17 @@
     <node concept="PrWs8" id="4fY4zucLWNG" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
+    <node concept="PrWs8" id="4xkVCYkRB5h" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="PrWs8" id="4fY4zucLWN9" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
     <node concept="1TJgyj" id="4fY4zucLWNO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="frontPanels" />
+      <property role="20kJfa" value="userInterface" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4fY4zucM6GT" resolve="FrontPanelList" />
+      <ref role="20lvS9" node="4xkVCYkRFBq" resolve="MainPanel" />
     </node>
     <node concept="1TJgyj" id="4fY4zucLXjw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -190,24 +158,9 @@
       <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4fY4zucLWRA">
-    <property role="1pbfSe" value="792338403" />
-    <property role="TrG5h" value="ControlList" />
-    <property role="34LRSv" value="controls" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4fY4zucLXgy" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucLXgC" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="controls" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4fY4zucLXhP" resolve="AbstractControl" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4fY4zucLXhP">
     <property role="1pbfSe" value="792336724" />
-    <property role="TrG5h" value="AbstractControl" />
+    <property role="TrG5h" value="AbstractGuiElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -264,41 +217,45 @@
       <ref role="20lvS9" node="4fY4zucLWPa" resolve="Sound" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4fY4zucM6GT">
-    <property role="1pbfSe" value="792298128" />
-    <property role="TrG5h" value="FrontPanelList" />
-    <property role="34LRSv" value="front panels" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4fY4zucM6Hl" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucM6Ho" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="frontPanels" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4fY4zucLzMi" resolve="FrontPanel" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4xkVCYkPPdJ">
     <property role="1pbfSe" value="584302082" />
     <property role="TrG5h" value="ControlKnob" />
     <property role="34LRSv" value="knob" />
     <property role="R4oN_" value="User Interface Control: Knob" />
-    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
   </node>
   <node concept="1TIwiD" id="4xkVCYkPPON">
     <property role="1pbfSe" value="584299582" />
     <property role="TrG5h" value="ControlSlider" />
     <property role="34LRSv" value="slider" />
     <property role="R4oN_" value="User Interface Control: Slider" />
-    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
   </node>
   <node concept="1TIwiD" id="4xkVCYkPPYW">
     <property role="1pbfSe" value="584298933" />
     <property role="TrG5h" value="ControlButton" />
     <property role="34LRSv" value="button" />
     <property role="R4oN_" value="User Interface Control: Button" />
-    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractControl" />
+    <ref role="1TJDcQ" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
+  </node>
+  <node concept="1TIwiD" id="4xkVCYkRFBq">
+    <property role="1pbfSe" value="583817111" />
+    <property role="TrG5h" value="MainPanel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4xkVCYkRGb8" role="1TKVEl">
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4xkVCYkRGbR" role="1TKVEl">
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="4xkVCYkRGmn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
+    </node>
   </node>
 </model>
 

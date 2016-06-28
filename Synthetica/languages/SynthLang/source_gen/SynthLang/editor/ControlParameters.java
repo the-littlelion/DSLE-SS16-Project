@@ -10,13 +10,13 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ControlParameters implements ConceptEditorComponent {
   public Collection<String> getContextHints() {
@@ -29,22 +29,35 @@ public class ControlParameters implements ConceptEditorComponent {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_snc1hf_a");
     editorCell.addEditorCell(this.createConstant_snc1hf_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_snc1hf_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_snc1hf_c0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_snc1hf_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_snc1hf_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_snc1hf_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_snc1hf_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_snc1hf_e0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_snc1hf_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_snc1hf_g0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_snc1hf_h0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_snc1hf_h0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_snc1hf_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_snc1hf_j0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_snc1hf_k0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_snc1hf_l0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_snc1hf_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Size:");
     editorCell.setCellId("Constant_snc1hf_a0");
+    Style style = new StyleImpl();
+    BaseLanguageStyle_StyleSheet.apply_Label(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_snc1hf_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_snc1hf_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width");
+    editorCell.setCellId("Constant_snc1hf_b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_snc1hf_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("width");
     provider.setNoTargetText("<no width>");
@@ -53,7 +66,6 @@ public class ControlParameters implements ConceptEditorComponent {
     editorCell.setCellId("CP_property_width");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -64,13 +76,19 @@ public class ControlParameters implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_snc1hf_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "height");
-    editorCell.setCellId("Constant_snc1hf_c0");
+  private EditorCell createConstant_snc1hf_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ",");
+    editorCell.setCellId("Constant_snc1hf_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_snc1hf_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_snc1hf_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "height");
+    editorCell.setCellId("Constant_snc1hf_e0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_snc1hf_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("height");
     provider.setNoTargetText("<no height>");
@@ -90,13 +108,22 @@ public class ControlParameters implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_snc1hf_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x");
-    editorCell.setCellId("Constant_snc1hf_e0");
+  private EditorCell createConstant_snc1hf_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Panel coordinates:");
+    editorCell.setCellId("Constant_snc1hf_g0");
+    Style style = new StyleImpl();
+    BaseLanguageStyle_StyleSheet.apply_Label(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_snc1hf_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_snc1hf_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x");
+    editorCell.setCellId("Constant_snc1hf_h0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_snc1hf_i0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("gridPosX");
     provider.setNoTargetText("<no gridPosX>");
@@ -105,7 +132,6 @@ public class ControlParameters implements ConceptEditorComponent {
     editorCell.setCellId("CP_property_gridPosX");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -116,13 +142,19 @@ public class ControlParameters implements ConceptEditorComponent {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_snc1hf_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y");
-    editorCell.setCellId("Constant_snc1hf_g0");
+  private EditorCell createConstant_snc1hf_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ",");
+    editorCell.setCellId("Constant_snc1hf_j0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_snc1hf_h0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_snc1hf_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y");
+    editorCell.setCellId("Constant_snc1hf_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_snc1hf_l0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("gridPosY");
     provider.setNoTargetText("<no gridPosY>");

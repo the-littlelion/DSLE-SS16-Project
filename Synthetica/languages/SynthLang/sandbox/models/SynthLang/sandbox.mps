@@ -14,23 +14,12 @@
       <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
     </language>
     <language id="4367d71c-7d55-4642-8148-026aeb16dfeb" name="SynthLang">
-      <concept id="4899373474420124473" name="SynthLang.structure.FrontPanelList" flags="ng" index="3fdB$e">
-        <child id="4899373474420124504" name="frontPanels" index="3fdB_J" />
-      </concept>
-      <concept id="4899373474419981458" name="SynthLang.structure.FrontPanel" flags="ng" index="3fe2U_">
-        <child id="4899373474420544479" name="name" index="3fcc7C" />
-        <child id="4899373474420564788" name="width" index="3fcj43" />
-        <child id="4899373474420564797" name="xPos" index="3fcj4a" />
-        <child id="4899373474420564792" name="height" index="3fcj4f" />
-        <child id="4899373474420564803" name="yPos" index="3fcj5O" />
+      <concept id="4899373474419981458" name="SynthLang.structure.SubPanel" flags="ng" index="3fe2U_">
         <child id="4899373474420085080" name="controls" index="3fesdJ" />
       </concept>
-      <concept id="4899373474420085877" name="SynthLang.structure.AbstractControl" flags="ng" index="3fesp2">
+      <concept id="4899373474420085877" name="SynthLang.structure.AbstractGuiElement" flags="ng" index="3fesp2">
         <property id="5212052969219382009" name="gridPosY" index="3swVhQ" />
         <property id="5212052969219381400" name="width" index="3swVon" />
         <property id="5212052969219381488" name="height" index="3swVpZ" />
@@ -45,7 +34,7 @@
       <concept id="4899373474420083870" name="SynthLang.structure.Synthesizer" flags="ng" index="3fetUD">
         <child id="4899373474420085989" name="connections" index="3fesri" />
         <child id="4899373474420085984" name="sounds" index="3fesrn" />
-        <child id="4899373474420083956" name="frontPanels" index="3fetV3" />
+        <child id="4899373474420083956" name="userInterface" index="3fetV3" />
       </concept>
       <concept id="4899373474420084084" name="SynthLang.structure.Connection" flags="ng" index="3fetX3">
         <child id="4899373474420225602" name="soundName" index="3fdYhP" />
@@ -58,12 +47,14 @@
         <child id="4899373474420159811" name="maximum" index="3fdItO" />
         <child id="4899373474420159818" name="default" index="3fdItX" />
       </concept>
-      <concept id="4899373474420084198" name="SynthLang.structure.ControlList" flags="ng" index="3fetZh">
-        <child id="4899373474420085800" name="controls" index="3fesov" />
-      </concept>
       <concept id="5212052969219383228" name="SynthLang.structure.ControlButton" flags="ng" index="3swV4N" />
       <concept id="5212052969219382579" name="SynthLang.structure.ControlSlider" flags="ng" index="3swVeW" />
       <concept id="5212052969219380079" name="SynthLang.structure.ControlKnob" flags="ng" index="3swVRw" />
+      <concept id="5212052969219865050" name="SynthLang.structure.MainPanel" flags="ng" index="3sy_tl">
+        <property id="5212052969219867336" name="width" index="3syyL7" />
+        <property id="5212052969219867383" name="height" index="3syyLS" />
+        <child id="5212052969219868055" name="contents" index="3syyGo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -72,45 +63,7 @@
     </language>
   </registry>
   <node concept="3fetUD" id="4fY4zucNWHw">
-    <node concept="3fdB$e" id="4fY4zucNWHx" role="3fetV3">
-      <node concept="3fe2U_" id="4fY4zucNWHy" role="3fdB_J">
-        <property role="TrG5h" value="frontPanel" />
-        <node concept="Xl_RD" id="4fY4zucNWHz" role="3fcc7C">
-          <property role="Xl_RC" value="frontPanel01" />
-        </node>
-        <node concept="3cmrfG" id="4fY4zucNWH$" role="3fcj43">
-          <property role="3cmrfH" value="600" />
-        </node>
-        <node concept="3cmrfG" id="4fY4zucNWH_" role="3fcj4f">
-          <property role="3cmrfH" value="400" />
-        </node>
-        <node concept="3cmrfG" id="4fY4zucNWHA" role="3fcj4a">
-          <property role="3cmrfH" value="0" />
-        </node>
-        <node concept="3cmrfG" id="4fY4zucNWHB" role="3fcj5O">
-          <property role="3cmrfH" value="0" />
-        </node>
-        <node concept="3fetZh" id="4fY4zucNWHC" role="3fesdJ">
-          <node concept="3swV4N" id="4xkVCYkQqrf" role="3fesov" />
-          <node concept="3swV4N" id="4xkVCYkQtgX" role="3fesov" />
-          <node concept="3swVRw" id="4xkVCYkPYE7" role="3fesov">
-            <property role="TrG5h" value="Volume" />
-            <property role="3swVon" value="150" />
-            <property role="3swVpZ" value="150" />
-            <property role="3swVv4" value="0" />
-            <property role="3swVhQ" value="1" />
-          </node>
-          <node concept="3swVeW" id="4xkVCYkPYRM" role="3fesov">
-            <property role="TrG5h" value="Frequency" />
-            <property role="3swVon" value="500" />
-            <property role="3swVpZ" value="50" />
-            <property role="3swVv4" value="0" />
-            <property role="3swVhQ" value="3" />
-          </node>
-          <node concept="3swV4N" id="4xkVCYkQqkS" role="3fesov" />
-        </node>
-      </node>
-    </node>
+    <property role="TrG5h" value="Simple Synth" />
     <node concept="3fessW" id="4fY4zucNWHK" role="3fesrn">
       <node concept="3fetXX" id="4fY4zucNWHL" role="3fdB_D">
         <property role="TrG5h" value="sawToothOscillator" />
@@ -140,6 +93,45 @@
         <node concept="Xl_RD" id="4fY4zucNWHU" role="3fdYhP">
           <property role="Xl_RC" value="mySawTooth" />
         </node>
+      </node>
+    </node>
+    <node concept="3sy_tl" id="4xkVCYkROTW" role="3fetV3">
+      <property role="3syyL7" value="300" />
+      <property role="3syyLS" value="300" />
+      <node concept="3fe2U_" id="4xkVCYkRTUE" role="3syyGo">
+        <property role="TrG5h" value="Monotone" />
+        <property role="3swVon" value="300" />
+        <property role="3swVpZ" value="150" />
+        <property role="3swVv4" value="0" />
+        <property role="3swVhQ" value="0" />
+        <node concept="3swVRw" id="4xkVCYkRUfc" role="3fesdJ">
+          <property role="TrG5h" value="Volume" />
+          <property role="3swVon" value="150" />
+          <property role="3swVpZ" value="150" />
+          <property role="3swVv4" value="0" />
+          <property role="3swVhQ" value="0" />
+        </node>
+        <node concept="3swVeW" id="4xkVCYkRUtc" role="3fesdJ">
+          <property role="TrG5h" value="Frequency" />
+          <property role="3swVon" value="300" />
+          <property role="3swVpZ" value="50" />
+          <property role="3swVv4" value="1" />
+          <property role="3swVhQ" value="0" />
+        </node>
+      </node>
+      <node concept="3swV4N" id="4xkVCYkRP0U" role="3syyGo">
+        <property role="TrG5h" value="ON" />
+        <property role="3swVon" value="30" />
+        <property role="3swVpZ" value="10" />
+        <property role="3swVv4" value="0" />
+        <property role="3swVhQ" value="1" />
+      </node>
+      <node concept="3swV4N" id="4xkVCYkRPmm" role="3syyGo">
+        <property role="TrG5h" value="OFF" />
+        <property role="3swVon" value="30" />
+        <property role="3swVpZ" value="10" />
+        <property role="3swVv4" value="1" />
+        <property role="3swVhQ" value="1" />
       </node>
     </node>
   </node>

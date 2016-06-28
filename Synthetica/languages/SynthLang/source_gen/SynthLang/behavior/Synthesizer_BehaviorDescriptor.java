@@ -4,9 +4,10 @@ package SynthLang.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.execution.util.behavior.IMainClass_BehaviorDescriptor;
+import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.scope.Scope;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.behaviour.DefaultValuesHolder;
 
 /**
@@ -15,7 +16,10 @@ import jetbrains.mps.smodel.behaviour.DefaultValuesHolder;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Synthesizer_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IMainClass_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
+public class Synthesizer_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IMainClass_BehaviorDescriptor, INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
+  public String virtual_getFqName_1213877404258(SNode __thisNode__) {
+    return null;
+  }
   public Scope virtual_getScope_3734116213129936182(SNode __thisNode__, SNode kind, SNode child) {
     return null;
   }

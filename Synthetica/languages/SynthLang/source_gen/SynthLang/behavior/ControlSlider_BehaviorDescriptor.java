@@ -9,7 +9,7 @@ package SynthLang.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ControlSlider_BehaviorDescriptor extends AbstractControl_BehaviorDescriptor {
+public class ControlSlider_BehaviorDescriptor extends AbstractGuiElement_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {

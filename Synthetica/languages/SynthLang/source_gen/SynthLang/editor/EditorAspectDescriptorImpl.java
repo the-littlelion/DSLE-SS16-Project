@@ -28,23 +28,20 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d7536fL, "SynthLang.structure.ControlKnob"))) {
         return Collections.<ConceptEditor>singletonList(new ControlKnob_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cde6L, "SynthLang.structure.ControlList"))) {
-        return Collections.<ConceptEditor>singletonList(new ControlList_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d75d33L, "SynthLang.structure.ControlSlider"))) {
         return Collections.<ConceptEditor>singletonList(new ControlSlider_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc63c92L, "SynthLang.structure.FrontPanel"))) {
-        return Collections.<ConceptEditor>singletonList(new FrontPanel_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc86b39L, "SynthLang.structure.FrontPanelList"))) {
-        return Collections.<ConceptEditor>singletonList(new FrontPanelList_Editor());
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94deb9daL, "SynthLang.structure.MainPanel"))) {
+        return Collections.<ConceptEditor>singletonList(new MainPanel_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd4aL, "SynthLang.structure.Sound"))) {
         return Collections.<ConceptEditor>singletonList(new Sound_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d50bL, "SynthLang.structure.SoundList"))) {
         return Collections.<ConceptEditor>singletonList(new SoundList_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc63c92L, "SynthLang.structure.SubPanel"))) {
+        return Collections.<ConceptEditor>singletonList(new SubPanel_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cc9eL, "SynthLang.structure.Synthesizer"))) {
         return Collections.<ConceptEditor>singletonList(new Synthesizer_Editor());
@@ -56,7 +53,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d475L, "SynthLang.structure.AbstractControl"))) {
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d475L, "SynthLang.structure.AbstractGuiElement"))) {
         if ("SynthLang.editor.ControlParameters".equals(editorComponentId)) {
           return Collections.<ConceptEditorComponent>singletonList(new ControlParameters());
         }
