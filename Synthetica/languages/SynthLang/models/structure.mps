@@ -94,38 +94,21 @@
   </node>
   <node concept="1TIwiD" id="4fY4zucLWPa">
     <property role="1pbfSe" value="792338559" />
-    <property role="TrG5h" value="Sound" />
-    <property role="34LRSv" value="sound" />
+    <property role="TrG5h" value="AbstractSound" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2TqmSU0G1xO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ports" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2TqmSU0G19U" resolve="Port" />
+    </node>
     <node concept="PrWs8" id="4fY4zucLWPA" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="4fY4zucLWPI" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucMfkV" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucMfkY" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="min" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucMfl3" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="maximum" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
-    </node>
-    <node concept="1TJgyj" id="4fY4zucMfla" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="default" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
     </node>
   </node>
   <node concept="1TIwiD" id="4fY4zucLWPO">
@@ -214,7 +197,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sounds" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4fY4zucLWPa" resolve="Sound" />
+      <ref role="20lvS9" node="4fY4zucLWPa" resolve="AbstractSound" />
     </node>
   </node>
   <node concept="1TIwiD" id="4xkVCYkPPdJ">
@@ -256,6 +239,61 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4fY4zucLXhP" resolve="AbstractGuiElement" />
     </node>
+    <node concept="PrWs8" id="2TqmSU0G0VZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2TqmSU0G19U">
+    <property role="1pbfSe" value="1358270968" />
+    <property role="TrG5h" value="Port" />
+    <property role="34LRSv" value="port" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2TqmSU0Gu_i" role="1TKVEl">
+      <property role="TrG5h" value="hasConfig" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="2TqmSU0G1iQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2TqmSU0G1fO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyi" id="2TqmSU0G1ks" role="1TKVEl">
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+    <node concept="1TJgyi" id="2TqmSU0G1pw" role="1TKVEl">
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+    <node concept="1TJgyi" id="2TqmSU0G1rC" role="1TKVEl">
+      <property role="TrG5h" value="default" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2TqmSU0G3zJ">
+    <property role="1pbfSe" value="1358261123" />
+    <property role="TrG5h" value="SoundGeneratorSawTooth" />
+    <property role="34LRSv" value="saw tooth generator" />
+    <ref role="1TJDcQ" node="4fY4zucLWPa" resolve="AbstractSound" />
+  </node>
+  <node concept="1TIwiD" id="2TqmSU0G3Ej">
+    <property role="1pbfSe" value="1358260703" />
+    <property role="TrG5h" value="SoundGeneratorSine" />
+    <property role="34LRSv" value="sine generator" />
+    <ref role="1TJDcQ" node="4fY4zucLWPa" resolve="AbstractSound" />
+  </node>
+  <node concept="1TIwiD" id="2TqmSU0HRpy">
+    <property role="1pbfSe" value="1357786640" />
+    <property role="TrG5h" value="SoundGeneratorSawToothBL" />
+    <property role="34LRSv" value="saw tooth generator BL" />
+    <ref role="1TJDcQ" node="4fY4zucLWPa" resolve="AbstractSound" />
+  </node>
+  <node concept="1TIwiD" id="2TqmSU0HRxx">
+    <property role="1pbfSe" value="1357786129" />
+    <property role="TrG5h" value="SoundGeneratorSawToothDPW" />
+    <property role="34LRSv" value="saw tooth generator" />
+    <ref role="1TJDcQ" node="4fY4zucLWPa" resolve="AbstractSound" />
   </node>
 </model>
 

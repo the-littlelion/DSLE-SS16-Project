@@ -15,6 +15,13 @@
       </concept>
     </language>
     <language id="4367d71c-7d55-4642-8148-026aeb16dfeb" name="SynthLang">
+      <concept id="3340082741251150458" name="SynthLang.structure.Port" flags="ng" index="2IU$BO">
+        <property id="3340082741251151592" name="default" index="2IU$PA" />
+        <property id="3340082741251151456" name="max" index="2IU$RI" />
+        <property id="3340082741251151132" name="min" index="2IU$Ui" />
+        <property id="3340082741251270994" name="hasConfig" index="2IUVbs" />
+      </concept>
+      <concept id="3340082741251160303" name="SynthLang.structure.SoundGeneratorSawTooth" flags="ng" index="2IUAdx" />
       <concept id="4899373474419981458" name="SynthLang.structure.SubPanel" flags="ng" index="3fe2U_">
         <child id="4899373474420085080" name="controls" index="3fesdJ" />
       </concept>
@@ -40,11 +47,8 @@
         <child id="4899373474420225077" name="value" index="3fdYo2" />
         <child id="4899373474420225084" name="controlName" index="3fdYob" />
       </concept>
-      <concept id="4899373474420084042" name="SynthLang.structure.Sound" flags="ng" index="3fetXX">
-        <child id="4899373474420159806" name="min" index="3fdIs9" />
-        <child id="4899373474420159803" name="name" index="3fdIsc" />
-        <child id="4899373474420159811" name="maximum" index="3fdItO" />
-        <child id="4899373474420159818" name="default" index="3fdItX" />
+      <concept id="4899373474420084042" name="SynthLang.structure.AbstractSound" flags="ng" index="3fetXX">
+        <child id="3340082741251151988" name="ports" index="2IU$fU" />
       </concept>
       <concept id="5212052969219383228" name="SynthLang.structure.ControlButton" flags="ng" index="3swV4N" />
       <concept id="5212052969219382579" name="SynthLang.structure.ControlSlider" flags="ng" index="3swVeW" />
@@ -64,19 +68,17 @@
   <node concept="3fetUD" id="4fY4zucNWHw">
     <property role="TrG5h" value="Simple Synth" />
     <node concept="3fessW" id="4fY4zucNWHK" role="3fesrn">
-      <node concept="3fetXX" id="4fY4zucNWHL" role="3fdB_D">
-        <property role="TrG5h" value="sawToothOscillator" />
-        <node concept="Xl_RD" id="4fY4zucNWHM" role="3fdIsc">
-          <property role="Xl_RC" value="mySawTooth" />
+      <node concept="2IUAdx" id="2TqmSU0GfJM" role="3fdB_D">
+        <node concept="2IU$BO" id="2TqmSU0Hx8o" role="2IU$fU">
+          <property role="TrG5h" value="amplitude" />
+          <property role="2IUVbs" value="false" />
         </node>
-        <node concept="3b6qkQ" id="4fY4zucNWHN" role="3fdIs9">
-          <property role="$nhwW" value="50.0" />
-        </node>
-        <node concept="3b6qkQ" id="4fY4zucNWHO" role="3fdItO">
-          <property role="$nhwW" value="10.000" />
-        </node>
-        <node concept="3b6qkQ" id="4fY4zucNWHP" role="3fdItX">
-          <property role="$nhwW" value="300.0" />
+        <node concept="2IU$BO" id="2TqmSU0Hx3y" role="2IU$fU">
+          <property role="TrG5h" value="frequency" />
+          <property role="2IUVbs" value="true" />
+          <property role="2IU$Ui" value="50.0f" />
+          <property role="2IU$RI" value="300.0F" />
+          <property role="2IU$PA" value="10000.0F" />
         </node>
       </node>
     </node>
@@ -95,8 +97,8 @@
       </node>
     </node>
     <node concept="3sy_tl" id="4xkVCYkROTW" role="3fetV3">
-      <property role="3syyL7" value="300" />
-      <property role="3syyLS" value="300" />
+      <property role="3syyL7" value="350" />
+      <property role="3syyLS" value="450" />
       <node concept="3fe2U_" id="4xkVCYkRTUE" role="3syyGo">
         <property role="TrG5h" value="Monotone" />
         <property role="3swVon" value="300" />
@@ -117,6 +119,20 @@
           <property role="3swVv4" value="1" />
           <property role="3swVhQ" value="0" />
         </node>
+        <node concept="3fe2U_" id="2TqmSU0FZPa" role="3fesdJ">
+          <property role="TrG5h" value="Something else" />
+          <property role="3swVon" value="100" />
+          <property role="3swVpZ" value="100" />
+          <property role="3swVv4" value="1" />
+          <property role="3swVhQ" value="1" />
+          <node concept="3swVRw" id="2TqmSU0FZR6" role="3fesdJ">
+            <property role="TrG5h" value="Tone" />
+            <property role="3swVon" value="20" />
+            <property role="3swVpZ" value="20" />
+            <property role="3swVv4" value="0" />
+            <property role="3swVhQ" value="0" />
+          </node>
+        </node>
       </node>
       <node concept="3swV4N" id="4xkVCYkRP0U" role="3syyGo">
         <property role="TrG5h" value="ON" />
@@ -130,6 +146,20 @@
         <property role="3swVon" value="30" />
         <property role="3swVpZ" value="10" />
         <property role="3swVv4" value="1" />
+        <property role="3swVhQ" value="1" />
+      </node>
+      <node concept="3swVRw" id="2TqmSU0CQhf" role="3syyGo">
+        <property role="TrG5h" value="Volume 2" />
+        <property role="3swVon" value="30" />
+        <property role="3swVpZ" value="30" />
+        <property role="3swVv4" value="2" />
+        <property role="3swVhQ" value="2" />
+      </node>
+      <node concept="3swVeW" id="2TqmSU0CQj8" role="3syyGo">
+        <property role="TrG5h" value="Frequency 2" />
+        <property role="3swVon" value="30" />
+        <property role="3swVpZ" value="30" />
+        <property role="3swVv4" value="2" />
         <property role="3swVhQ" value="1" />
       </node>
     </node>

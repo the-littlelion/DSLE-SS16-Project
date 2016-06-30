@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="SynthLang.sandbox.RunSynthetica" file="RunSynthetica.java">
-    <classNode dependClassName="SynthLang.sandbox.SyntheticaController" />
+  <dependency className="SynthLang.sandbox.ISimpleSynth" file="ISimpleSynth.java" />
+  <dependency className="SynthLang.sandbox.SimpleSynth" file="SimpleSynth.java">
+    <classNode dependClassName="SynthLang.sandbox.SimpleSynthController" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="javax.swing.SwingUtilities" />
     <classNode extendsClassName="javax.swing.JApplet" />
   </dependency>
-  <dependency className="SynthLang.sandbox.SyntheticaController" file="SyntheticaController.java">
-    <classNode dependClassName="SynthLang.sandbox.SyntheticaView" />
+  <dependency className="SynthLang.sandbox.SimpleSynthController" file="SimpleSynthController.java">
+    <classNode dependClassName="SynthLang.sandbox.ISimpleSynth" />
+    <classNode dependClassName="SynthLang.sandbox.SimpleSynthModel" />
+    <classNode dependClassName="SynthLang.sandbox.SimpleSynthView" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.awt.event.KeyEvent" />
     <classNode dependClassName="java.awt.event.WindowAdapter" />
     <classNode dependClassName="java.awt.event.WindowEvent" />
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.System" />
-    <classNode extendsClassName="java.awt.event.ActionListener" />
+    <classNode dependClassName="javax.swing.AbstractAction" />
+    <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JRootPane" />
+    <classNode dependClassName="javax.swing.KeyStroke" />
   </dependency>
-  <dependency className="SynthLang.sandbox.SyntheticaView" file="SyntheticaView.java">
+  <dependency className="SynthLang.sandbox.SimpleSynthModel" file="SimpleSynthModel.java">
     <classNode dependClassName="com.jsyn.JSyn" />
     <classNode dependClassName="com.jsyn.Synthesizer" />
+    <classNode dependClassName="com.jsyn.ports.UnitInputPort" />
+    <classNode dependClassName="com.jsyn.ports.UnitPort" />
+    <classNode dependClassName="com.jsyn.unitgen.FilterHighPass" />
+    <classNode dependClassName="com.jsyn.unitgen.FilterPeakingEQ" />
+    <classNode dependClassName="com.jsyn.unitgen.LineOut" />
+    <classNode dependClassName="com.jsyn.unitgen.LinearRamp" />
+    <classNode dependClassName="com.jsyn.unitgen.SawtoothOscillatorBL" />
+    <classNode dependClassName="com.jsyn.unitgen.UnitGenerator" />
+    <classNode dependClassName="com.jsyn.unitgen.UnitOscillator" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="SynthLang.sandbox.ISimpleSynth" />
+  </dependency>
+  <dependency className="SynthLang.sandbox.SimpleSynthView" file="SimpleSynthView.java">
+    <classNode dependClassName="SynthLang.sandbox.SimpleSynthController" />
+    <classNode dependClassName="com.jsyn.swing.DoubleBoundedRangeSlider" />
     <classNode dependClassName="com.jsyn.swing.ExponentialRangeModel" />
     <classNode dependClassName="com.jsyn.swing.PortControllerFactory" />
     <classNode dependClassName="com.jsyn.swing.PortModelFactory" />
     <classNode dependClassName="com.jsyn.swing.RotaryTextController" />
-    <classNode dependClassName="com.jsyn.unitgen.LineOut" />
-    <classNode dependClassName="com.jsyn.unitgen.LinearRamp" />
-    <classNode dependClassName="com.jsyn.unitgen.SawtoothOscillatorBL" />
-    <classNode dependClassName="com.jsyn.unitgen.UnitOscillator" />
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Font" />
     <classNode dependClassName="java.awt.GridLayout" />
-    <classNode dependClassName="java.awt.event.WindowAdapter" />
     <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.ImageIcon" />
+    <classNode dependClassName="javax.swing.JLabel" />
     <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.SwingConstants" />
     <classNode dependClassName="javax.swing.UIManager" />
     <classNode dependClassName="javax.swing.WindowConstants" />
     <classNode extendsClassName="javax.swing.JFrame" />

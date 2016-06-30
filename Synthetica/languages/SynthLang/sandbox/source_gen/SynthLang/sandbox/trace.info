@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.BreakStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -8,139 +9,327 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:73857545-858a-4a9c-889f-d0979d7ae51d(SynthLang.sandbox)/4899373474420607840">
-    <file name="RunSynthetica.java">
-      <node id="4899373474420607840" at="19,25,20,35" concept="2" />
-      <node id="4899373474420607840" at="19,0,22,0" concept="6" trace="run#()V" />
-      <node id="4899373474420607840" at="17,48,22,7" concept="2" />
-      <node id="4899373474420607840" at="17,0,24,0" concept="10" trace="main#([Ljava/lang/String;)V" />
-      <scope id="4899373474420607840" at="19,25,20,35" />
+    <file name="ISimpleSynth.java">
+      <node id="4899373474420607840" at="14,0,15,0" concept="7" trace="start#()V" />
+      <node id="4899373474420607840" at="19,0,20,0" concept="7" trace="stop#()V" />
+      <scope id="4899373474420607840" at="14,0,15,0" />
+      <scope id="4899373474420607840" at="19,0,20,0" />
+      <unit id="4899373474420607840" at="9,0,21,0" name="SynthLang.sandbox.ISimpleSynth" />
+    </file>
+    <file name="SimpleSynth.java">
+      <node id="4899373474420607840" at="19,25,20,36" concept="3" />
+      <node id="4899373474420607840" at="19,0,22,0" concept="7" trace="run#()V" />
+      <node id="4899373474420607840" at="17,48,22,7" concept="3" />
+      <node id="4899373474420607840" at="17,0,24,0" concept="13" trace="main#([Ljava/lang/String;)V" />
+      <scope id="4899373474420607840" at="19,25,20,36" />
       <scope id="4899373474420607840" at="19,0,22,0" />
       <scope id="4899373474420607840" at="17,48,22,7" />
       <scope id="4899373474420607840" at="17,0,24,0">
         <var name="args" id="4899373474420607840" />
       </scope>
-      <unit id="4899373474420607840" at="18,35,22,5" name="SynthLang.sandbox.RunSynthetica$1" />
-      <unit id="4899373474420607840" at="15,0,25,0" name="SynthLang.sandbox.RunSynthetica" />
+      <unit id="4899373474420607840" at="18,35,22,5" name="SynthLang.sandbox.SimpleSynth$1" />
+      <unit id="4899373474420607840" at="15,0,25,0" name="SynthLang.sandbox.SimpleSynth" />
     </file>
-    <file name="SyntheticaController.java">
-      <node id="4899373474420607840" at="12,0,13,0" concept="3" trace="syntheticaFrame" />
-      <node id="4899373474420607840" at="17,50,18,22" concept="2" />
-      <node id="4899373474420607840" at="20,7,21,0" concept="9" />
-      <node id="4899373474420607840" at="21,0,22,34" concept="2" />
-      <node id="4899373474420607840" at="22,34,23,36" concept="2" />
-      <node id="4899373474420607840" at="27,50,28,17" concept="8" />
-      <node id="4899373474420607840" at="32,40,33,35" concept="2" />
-      <node id="4899373474420607840" at="35,42,36,37" concept="2" />
-      <node id="4899373474420607840" at="37,5,38,19" concept="2" />
-      <node id="4899373474420607840" at="31,30,34,5" concept="5" />
-      <node id="4899373474420607840" at="34,5,37,5" concept="5" />
-      <node id="4899373474420607840" at="16,0,20,0" concept="6" trace="windowClosing#(Ljava/awt/event/WindowEvent;)V" />
-      <node id="4899373474420607840" at="26,0,30,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="4899373474420607840" at="14,33,20,7" concept="2" />
-      <node id="4899373474420607840" at="31,0,40,0" concept="6" trace="exitProgram#()V" />
-      <node id="4899373474420607840" at="14,0,25,0" concept="1" trace="SyntheticaController#()V" />
-      <scope id="4899373474420607840" at="17,50,18,22" />
-      <scope id="4899373474420607840" at="27,50,28,17" />
-      <scope id="4899373474420607840" at="32,40,33,35" />
-      <scope id="4899373474420607840" at="35,42,36,37" />
-      <scope id="4899373474420607840" at="16,0,20,0">
-        <var name="evt" id="4899373474420607840" />
-      </scope>
-      <scope id="4899373474420607840" at="26,0,30,0">
+    <file name="SimpleSynthController.java">
+      <node id="4899373474420607840" at="17,0,18,0" concept="4" trace="syntheticaModel" />
+      <node id="4899373474420607840" at="18,0,19,0" concept="4" trace="syntheticaFrame" />
+      <node id="4899373474420607840" at="24,9,25,47" concept="3" />
+      <node id="4899373474420607840" at="25,47,26,50" concept="3" />
+      <node id="4899373474420607840" at="27,27,28,65" concept="3" />
+      <node id="4899373474420607840" at="28,65,29,26" concept="3" />
+      <node id="4899373474420607840" at="30,36,31,31" concept="3" />
+      <node id="4899373474420607840" at="32,7,33,21" concept="3" />
+      <node id="4899373474420607840" at="34,5,35,57" concept="3" />
+      <node id="4899373474420607840" at="35,57,36,49" concept="3" />
+      <node id="4899373474420607840" at="36,49,37,28" concept="3" />
+      <node id="4899373474420607840" at="45,70,46,41" concept="8" />
+      <node id="4899373474420607840" at="46,41,47,130" concept="3" />
+      <node id="4899373474420607840" at="52,0,53,0" concept="12" trace="serialVersionUID" />
+      <node id="4899373474420607840" at="54,54,55,53" concept="3" />
+      <node id="4899373474420607840" at="55,53,56,80" concept="3" />
+      <node id="4899373474420607840" at="70,50,71,21" concept="3" />
+      <node id="4899373474420607840" at="71,21,72,23" concept="3" />
+      <node id="4899373474420607840" at="77,43,78,27" concept="9" />
+      <node id="4899373474420607840" at="29,26,32,7" concept="6" />
+      <node id="4899373474420607840" at="77,0,80,0" concept="7" trace="getModel#()LSynthLang/sandbox/SimpleSynthModel;" />
+      <node id="4899373474420607840" at="53,0,58,0" concept="7" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <node id="4899373474420607840" at="69,0,74,0" concept="7" trace="windowClosing#(Ljava/awt/event/WindowEvent;)V" />
+      <node id="4899373474420607840" at="67,102,74,7" concept="3" />
+      <node id="4899373474420607840" at="67,0,76,0" concept="13" trace="installExitHandler#(Ljavax/swing/JFrame;null)V" />
+      <node id="4899373474420607840" at="23,34,34,5" concept="14" />
+      <node id="4899373474420607840" at="47,130,58,7" concept="3" />
+      <node id="4899373474420607840" at="45,0,60,0" concept="13" trace="installEscapeCloseOperation#(Ljavax/swing/JFrame;)V" />
+      <node id="4899373474420607840" at="23,0,39,0" concept="2" trace="SimpleSynthController#()V" />
+      <scope id="4899373474420607840" at="30,36,31,31" />
+      <scope id="4899373474420607840" at="77,43,78,27" />
+      <scope id="4899373474420607840" at="24,9,26,50" />
+      <scope id="4899373474420607840" at="54,54,56,80" />
+      <scope id="4899373474420607840" at="70,50,72,23" />
+      <scope id="4899373474420607840" at="77,0,80,0" />
+      <scope id="4899373474420607840" at="53,0,58,0">
         <var name="event" id="4899373474420607840" />
       </scope>
-      <scope id="4899373474420607840" at="31,30,38,19" />
-      <scope id="4899373474420607840" at="14,33,23,36" />
-      <scope id="4899373474420607840" at="31,0,40,0" />
-      <scope id="4899373474420607840" at="14,0,25,0" />
-      <unit id="4899373474420607840" at="15,47,20,5" name="SynthLang.sandbox.SyntheticaController$1" />
-      <unit id="4899373474420607840" at="10,0,41,0" name="SynthLang.sandbox.SyntheticaController" />
-    </file>
-    <file name="SyntheticaView.java">
-      <node id="4899373474420607840" at="24,0,25,0" concept="3" trace="synth" />
-      <node id="4899373474420607840" at="25,0,26,0" concept="3" trace="osc" />
-      <node id="4899373474420607840" at="26,0,27,0" concept="3" trace="lag" />
-      <node id="4899373474420607840" at="27,0,28,0" concept="3" trace="lineOut" />
-      <node id="4899373474420607840" at="29,0,30,0" concept="3" trace="frame" />
-      <node id="4899373474420607840" at="30,0,31,0" concept="3" trace="WIDTH" />
-      <node id="4899373474420607840" at="31,0,32,0" concept="3" trace="HEIGHT" />
-      <node id="4899373474420607840" at="35,46,36,56" concept="2" />
-      <node id="4899373474420607840" at="36,56,37,16" concept="0" />
-      <node id="4899373474420607840" at="40,27,41,34" concept="8" />
-      <node id="4899373474420607840" at="45,27,46,25" concept="2" />
-      <node id="4899373474420607840" at="46,25,47,72" concept="2" />
-      <node id="4899373474420607840" at="47,72,48,61" concept="2" />
-      <node id="4899373474420607840" at="48,61,49,33" concept="2" />
-      <node id="4899373474420607840" at="49,33,50,33" concept="2" />
-      <node id="4899373474420607840" at="50,33,51,0" concept="9" />
-      <node id="4899373474420607840" at="51,0,52,37" concept="2" />
-      <node id="4899373474420607840" at="52,37,53,0" concept="9" />
-      <node id="4899373474420607840" at="53,0,54,26" concept="8" />
-      <node id="4899373474420607840" at="54,26,55,48" concept="2" />
-      <node id="4899373474420607840" at="55,48,56,65" concept="8" />
-      <node id="4899373474420607840" at="56,65,57,38" concept="2" />
-      <node id="4899373474420607840" at="57,38,58,24" concept="8" />
-      <node id="4899373474420607840" at="58,24,59,39" concept="2" />
-      <node id="4899373474420607840" at="59,39,60,60" concept="8" />
-      <node id="4899373474420607840" at="60,60,61,44" concept="2" />
-      <node id="4899373474420607840" at="61,44,62,44" concept="2" />
-      <node id="4899373474420607840" at="62,44,63,0" concept="9" />
-      <node id="4899373474420607840" at="63,0,64,43" concept="8" />
-      <node id="4899373474420607840" at="64,43,65,38" concept="2" />
-      <node id="4899373474420607840" at="65,38,66,35" concept="2" />
-      <node id="4899373474420607840" at="66,35,67,22" concept="2" />
-      <node id="4899373474420607840" at="67,22,68,0" concept="9" />
-      <node id="4899373474420607840" at="68,0,69,37" concept="8" />
-      <node id="4899373474420607840" at="69,37,70,42" concept="2" />
-      <node id="4899373474420607840" at="70,42,71,0" concept="9" />
-      <node id="4899373474420607840" at="71,0,72,94" concept="7" />
-      <node id="4899373474420607840" at="72,94,73,76" concept="7" />
-      <node id="4899373474420607840" at="73,76,74,31" concept="2" />
-      <node id="4899373474420607840" at="74,31,75,27" concept="2" />
-      <node id="4899373474420607840" at="75,27,76,36" concept="7" />
-      <node id="4899373474420607840" at="76,36,77,24" concept="2" />
-      <node id="4899373474420607840" at="77,24,78,25" concept="2" />
-      <node id="4899373474420607840" at="78,25,79,0" concept="9" />
-      <node id="4899373474420607840" at="79,0,80,46" concept="2" />
-      <node id="4899373474420607840" at="80,46,81,80" concept="2" />
-      <node id="4899373474420607840" at="81,80,82,21" concept="2" />
-      <node id="4899373474420607840" at="82,21,83,0" concept="9" />
-      <node id="4899373474420607840" at="83,0,84,38" concept="2" />
-      <node id="4899373474420607840" at="84,38,85,30" concept="2" />
-      <node id="4899373474420607840" at="85,30,86,27" concept="2" />
-      <node id="4899373474420607840" at="89,61,90,37" concept="2" />
-      <node id="4899373474420607840" at="89,0,92,0" concept="6" trace="addFrameWindowListener#(Ljava/awt/event/WindowAdapter;)V" />
-      <node id="4899373474420607840" at="34,83,38,9" concept="5" />
-      <node id="4899373474420607840" at="33,9,39,7" concept="4" />
-      <node id="4899373474420607840" at="32,3,42,5" concept="11" />
-      <node id="4899373474420607840" at="45,0,88,0" concept="1" trace="SyntheticaView#()V" />
-      <scope id="4899373474420607840" at="40,0,41,34">
+      <scope id="4899373474420607840" at="69,0,74,0">
+        <var name="evt" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="27,0,33,21">
         <var name="e" id="4899373474420607840" />
       </scope>
-      <scope id="4899373474420607840" at="40,27,41,34" />
-      <scope id="4899373474420607840" at="89,61,90,37" />
-      <scope id="4899373474420607840" at="35,46,37,16" />
-      <scope id="4899373474420607840" at="89,0,92,0">
-        <var name="adapter" id="4899373474420607840" />
+      <scope id="4899373474420607840" at="27,27,33,21" />
+      <scope id="4899373474420607840" at="67,102,74,7" />
+      <scope id="4899373474420607840" at="67,0,76,0">
+        <var name="frame" id="4899373474420607840" />
+        <var name="model" id="4899373474420607840" />
       </scope>
-      <scope id="4899373474420607840" at="34,83,38,9" />
-      <scope id="4899373474420607840" at="33,9,39,7" />
-      <scope id="4899373474420607840" at="33,9,39,7">
+      <scope id="4899373474420607840" at="45,70,58,7">
+        <var name="root" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="23,34,37,28" />
+      <scope id="4899373474420607840" at="45,0,60,0">
+        <var name="frame" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="23,0,39,0" />
+      <unit id="4899373474420607840" at="68,32,74,5" name="SynthLang.sandbox.SimpleSynthController$2" />
+      <unit id="4899373474420607840" at="48,55,58,5" name="SynthLang.sandbox.SimpleSynthController$1" />
+      <unit id="4899373474420607840" at="15,0,81,0" name="SynthLang.sandbox.SimpleSynthController" />
+    </file>
+    <file name="SimpleSynthModel.java">
+      <node id="4899373474420607840" at="19,0,20,0" concept="4" trace="synth" />
+      <node id="4899373474420607840" at="20,0,21,0" concept="4" trace="osc" />
+      <node id="4899373474420607840" at="21,0,22,0" concept="4" trace="lag" />
+      <node id="4899373474420607840" at="22,0,23,0" concept="4" trace="filter" />
+      <node id="4899373474420607840" at="23,0,24,0" concept="4" trace="filter2" />
+      <node id="4899373474420607840" at="24,0,25,0" concept="4" trace="lineOut" />
+      <node id="4899373474420607840" at="30,29,31,11" concept="3" />
+      <node id="4899373474420607840" at="38,23,39,37" concept="3" />
+      <node id="4899373474420607840" at="39,37,40,37" concept="3" />
+      <node id="4899373474420607840" at="40,37,41,27" concept="3" />
+      <node id="4899373474420607840" at="41,27,42,34" concept="3" />
+      <node id="4899373474420607840" at="42,34,43,36" concept="3" />
+      <node id="4899373474420607840" at="43,36,44,28" concept="3" />
+      <node id="4899373474420607840" at="44,28,45,26" concept="10" />
+      <node id="4899373474420607840" at="45,26,46,19" concept="3" />
+      <node id="4899373474420607840" at="46,19,47,65" concept="10" />
+      <node id="4899373474420607840" at="47,65,48,19" concept="3" />
+      <node id="4899373474420607840" at="48,19,49,22" concept="3" />
+      <node id="4899373474420607840" at="49,22,50,23" concept="3" />
+      <node id="4899373474420607840" at="50,23,51,24" concept="10" />
+      <node id="4899373474420607840" at="51,24,52,23" concept="3" />
+      <node id="4899373474420607840" at="52,23,53,60" concept="10" />
+      <node id="4899373474420607840" at="53,60,54,37" concept="3" />
+      <node id="4899373474420607840" at="54,37,55,41" concept="3" />
+      <node id="4899373474420607840" at="55,41,56,48" concept="3" />
+      <node id="4899373474420607840" at="56,48,57,48" concept="3" />
+      <node id="4899373474420607840" at="57,48,58,43" concept="10" />
+      <node id="4899373474420607840" at="58,43,59,38" concept="3" />
+      <node id="4899373474420607840" at="59,38,60,35" concept="3" />
+      <node id="4899373474420607840" at="60,35,61,22" concept="3" />
+      <node id="4899373474420607840" at="61,22,62,46" concept="3" />
+      <node id="4899373474420607840" at="62,46,63,50" concept="3" />
+      <node id="4899373474420607840" at="63,50,64,49" concept="3" />
+      <node id="4899373474420607840" at="67,23,68,18" concept="3" />
+      <node id="4899373474420607840" at="68,18,69,20" concept="3" />
+      <node id="4899373474420607840" at="73,24,74,19" concept="3" />
+      <node id="4899373474420607840" at="76,26,77,21" concept="3" />
+      <node id="4899373474420607840" at="82,9,83,71" concept="8" />
+      <node id="4899373474420607840" at="83,71,84,66" concept="8" />
+      <node id="4899373474420607840" at="84,66,85,34" concept="9" />
+      <node id="4899373474420607840" at="86,27,87,26" concept="3" />
+      <node id="4899373474420607840" at="87,26,88,32" concept="10" />
+      <node id="4899373474420607840" at="89,5,90,16" concept="9" />
+      <node id="4899373474420607840" at="30,0,33,0" concept="2" trace="SimpleSynthModel#()V" />
+      <node id="4899373474420607840" at="72,22,75,5" concept="6" />
+      <node id="4899373474420607840" at="75,5,78,5" concept="6" />
+      <node id="4899373474420607840" at="67,0,71,0" concept="7" trace="start#()V" />
+      <node id="4899373474420607840" at="72,0,80,0" concept="7" trace="stop#()V" />
+      <node id="4899373474420607840" at="81,83,89,5" concept="14" />
+      <node id="4899373474420607840" at="81,0,92,0" concept="7" trace="getInputPortByName#(Ljava/lang/String;Ljava/lang/String;)Lcom/jsyn/ports/UnitInputPort;" />
+      <node id="4899373474420607840" at="38,0,66,0" concept="7" trace="init#()V" />
+      <scope id="4899373474420607840" at="30,29,31,11" />
+      <scope id="4899373474420607840" at="73,24,74,19" />
+      <scope id="4899373474420607840" at="76,26,77,21" />
+      <scope id="4899373474420607840" at="67,23,69,20" />
+      <scope id="4899373474420607840" at="86,0,88,32">
+        <var name="e" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="86,27,88,32" />
+      <scope id="4899373474420607840" at="30,0,33,0" />
+      <scope id="4899373474420607840" at="82,9,85,34">
+        <var name="o" id="4899373474420607840" />
+        <var name="port" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="67,0,71,0" />
+      <scope id="4899373474420607840" at="72,22,78,5" />
+      <scope id="4899373474420607840" at="72,0,80,0" />
+      <scope id="4899373474420607840" at="81,83,90,16" />
+      <scope id="4899373474420607840" at="81,0,92,0">
+        <var name="generator" id="4899373474420607840" />
+        <var name="portName" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="38,23,64,49" />
+      <scope id="4899373474420607840" at="38,0,66,0" />
+      <unit id="4899373474420607840" at="17,0,93,0" name="SynthLang.sandbox.SimpleSynthModel" />
+    </file>
+    <file name="SimpleSynthView.java">
+      <node id="4899373474420607840" at="25,0,26,0" concept="12" trace="serialVersionUID" />
+      <node id="4899373474420607840" at="27,0,28,0" concept="4" trace="controller" />
+      <node id="4899373474420607840" at="32,46,33,56" concept="3" />
+      <node id="4899373474420607840" at="33,56,34,16" concept="1" />
+      <node id="4899373474420607840" at="37,27,38,34" concept="10" />
+      <node id="4899373474420607840" at="42,53,43,21" concept="3" />
+      <node id="4899373474420607840" at="43,21,44,11" concept="3" />
+      <node id="4899373474420607840" at="47,23,48,66" concept="3" />
+      <node id="4899373474420607840" at="48,66,49,55" concept="3" />
+      <node id="4899373474420607840" at="49,55,50,29" concept="3" />
+      <node id="4899373474420607840" at="50,29,51,22" concept="3" />
+      <node id="4899373474420607840" at="51,22,52,23" concept="3" />
+      <node id="4899373474420607840" at="52,23,53,0" concept="11" />
+      <node id="4899373474420607840" at="53,0,54,37" concept="10" />
+      <node id="4899373474420607840" at="54,37,55,36" concept="3" />
+      <node id="4899373474420607840" at="55,36,56,0" concept="11" />
+      <node id="5212052969219923626" at="57,5,58,26" concept="10" />
+      <node id="5212052969219923626" at="58,26,59,40" concept="8" />
+      <node id="5212052969219923626" at="59,40,60,50" concept="3" />
+      <node id="5212052969219923626" at="60,50,61,0" concept="11" />
+      <node id="5212052969219924940" at="62,7,63,149" concept="8" />
+      <node id="5212052969219924940" at="63,149,64,88" concept="8" />
+      <node id="5212052969219924940" at="64,88,65,36" concept="3" />
+      <node id="5212052969219924940" at="65,36,66,0" concept="11" />
+      <node id="5212052969219924940" at="66,0,67,75" concept="10" />
+      <node id="5212052969219924940" at="67,75,68,44" concept="8" />
+      <node id="5212052969219924940" at="68,44,69,52" concept="3" />
+      <node id="5212052969219924940" at="69,52,70,57" concept="3" />
+      <node id="5212052969219924940" at="70,57,71,39" concept="3" />
+      <node id="5212052969219925836" at="73,7,74,158" concept="8" />
+      <node id="5212052969219925836" at="74,158,75,59" concept="3" />
+      <node id="5212052969219925836" at="75,59,76,0" concept="11" />
+      <node id="5212052969219925836" at="76,0,77,86" concept="10" />
+      <node id="5212052969219925836" at="77,86,78,46" concept="8" />
+      <node id="5212052969219925836" at="78,46,79,54" concept="3" />
+      <node id="5212052969219925836" at="79,54,80,80" concept="8" />
+      <node id="5212052969219925836" at="80,80,81,81" concept="3" />
+      <node id="5212052969219925836" at="81,81,82,70" concept="3" />
+      <node id="5212052969219925836" at="82,70,83,61" concept="3" />
+      <node id="5212052969219925836" at="83,61,84,41" concept="3" />
+      <node id="3340082741251145034" at="86,7,87,28" concept="10" />
+      <node id="3340082741251145034" at="87,28,88,43" concept="8" />
+      <node id="3340082741251145034" at="88,43,89,53" concept="3" />
+      <node id="3340082741251145034" at="89,53,90,0" concept="11" />
+      <node id="3340082741251145158" at="91,9,92,152" concept="8" />
+      <node id="3340082741251145158" at="92,152,93,92" concept="8" />
+      <node id="3340082741251145158" at="93,92,94,37" concept="3" />
+      <node id="3340082741251145158" at="94,37,95,0" concept="11" />
+      <node id="3340082741251145158" at="95,0,96,77" concept="10" />
+      <node id="3340082741251145158" at="96,77,97,47" concept="8" />
+      <node id="3340082741251145158" at="97,47,98,55" concept="3" />
+      <node id="3340082741251145158" at="98,55,99,61" concept="3" />
+      <node id="3340082741251145158" at="99,61,100,43" concept="3" />
+      <node id="3340082741251145034" at="101,9,102,0" concept="11" />
+      <node id="3340082741251145034" at="102,0,103,38" concept="3" />
+      <node id="5212052969219923626" at="104,7,105,0" concept="11" />
+      <node id="5212052969219923626" at="105,0,106,28" concept="3" />
+      <node id="5212052969219903546" at="107,5,108,60" concept="0" />
+      <node id="5212052969219903546" at="107,5,108,60" concept="3" />
+      <node id="5212052969219904918" at="108,60,109,61" concept="0" />
+      <node id="5212052969219904918" at="108,60,109,61" concept="3" />
+      <node id="3340082741250319439" at="110,5,111,146" concept="8" />
+      <node id="3340082741250319439" at="111,146,112,84" concept="8" />
+      <node id="3340082741250319439" at="112,84,113,35" concept="3" />
+      <node id="3340082741250319439" at="113,35,114,0" concept="11" />
+      <node id="3340082741250319439" at="114,0,115,73" concept="10" />
+      <node id="3340082741250319439" at="115,73,116,41" concept="8" />
+      <node id="3340082741250319439" at="116,41,117,49" concept="3" />
+      <node id="3340082741250319439" at="117,49,118,53" concept="3" />
+      <node id="3340082741250319439" at="118,53,119,29" concept="3" />
+      <node id="3340082741250319560" at="121,5,122,155" concept="8" />
+      <node id="3340082741250319560" at="122,155,123,56" concept="3" />
+      <node id="3340082741250319560" at="123,56,124,0" concept="11" />
+      <node id="3340082741250319560" at="124,0,125,84" concept="10" />
+      <node id="3340082741250319560" at="125,84,126,43" concept="8" />
+      <node id="3340082741250319560" at="126,43,127,51" concept="3" />
+      <node id="3340082741250319560" at="127,51,128,77" concept="8" />
+      <node id="3340082741250319560" at="128,77,129,77" concept="3" />
+      <node id="3340082741250319560" at="129,77,130,66" concept="3" />
+      <node id="3340082741250319560" at="130,66,131,57" concept="3" />
+      <node id="3340082741250319560" at="131,57,132,31" concept="3" />
+      <node id="4899373474420607840" at="133,5,134,0" concept="11" />
+      <node id="4899373474420607840" at="134,0,135,15" concept="3" />
+      <node id="4899373474420607840" at="135,15,136,32" concept="3" />
+      <node id="4899373474420607840" at="136,32,137,21" concept="3" />
+      <node id="4899373474420607840" at="145,48,146,22" concept="9" />
+      <node id="4899373474420607840" at="145,0,148,0" concept="7" trace="getController#()LSynthLang/sandbox/SimpleSynthController;" />
+      <node id="4899373474420607840" at="31,83,35,9" concept="6" />
+      <node id="4899373474420607840" at="42,0,46,0" concept="2" trace="SimpleSynthView#(LSynthLang/sandbox/SimpleSynthController;)V" />
+      <node id="4899373474420607840" at="30,9,36,7" concept="5" />
+      <node id="4899373474420607840" at="29,3,39,5" concept="14" />
+      <node id="5212052969219924940" at="61,0,72,7" concept="0" />
+      <node id="3340082741251145158" at="90,0,101,9" concept="0" />
+      <node id="3340082741250319439" at="109,61,120,5" concept="0" />
+      <node id="5212052969219925836" at="72,7,85,7" concept="0" />
+      <node id="3340082741250319560" at="120,5,133,5" concept="0" />
+      <node id="3340082741251145034" at="85,7,104,7" concept="0" />
+      <node id="5212052969219923626" at="56,0,107,5" concept="0" />
+      <node id="4899373474420607840" at="47,0,139,0" concept="7" trace="init#()V" />
+      <scope id="4899373474420607840" at="37,0,38,34">
+        <var name="e" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="37,27,38,34" />
+      <scope id="5212052969219903546" at="107,5,108,60" />
+      <scope id="5212052969219904918" at="108,60,109,61" />
+      <scope id="4899373474420607840" at="145,48,146,22" />
+      <scope id="4899373474420607840" at="32,46,34,16" />
+      <scope id="4899373474420607840" at="42,53,44,11" />
+      <scope id="4899373474420607840" at="145,0,148,0" />
+      <scope id="4899373474420607840" at="31,83,35,9" />
+      <scope id="4899373474420607840" at="42,0,46,0">
+        <var name="ctl" id="4899373474420607840" />
+      </scope>
+      <scope id="4899373474420607840" at="30,9,36,7" />
+      <scope id="4899373474420607840" at="30,9,36,7">
         <var name="info" id="4899373474420607840" />
       </scope>
-      <scope id="4899373474420607840" at="32,3,42,5" />
-      <scope id="4899373474420607840" at="45,27,86,27">
-        <var name="amplitudeModel" id="4899373474420607840" />
-        <var name="knob" id="4899373474420607840" />
-        <var name="knobPanel" id="4899373474420607840" />
+      <scope id="5212052969219924940" at="62,7,71,39">
+        <var name="knobInputModel_a0a" id="5212052969219924940" />
+        <var name="knobPanel_a0a" id="5212052969219924940" />
+        <var name="knob_a0a" id="5212052969219924940" />
       </scope>
-      <scope id="4899373474420607840" at="45,0,88,0" />
-      <unit id="4899373474420607840" at="23,0,93,0" name="SynthLang.sandbox.SyntheticaView" />
+      <scope id="3340082741251145158" at="91,9,100,43">
+        <var name="knobInputModel_a2a0" id="3340082741251145158" />
+        <var name="knobPanel_a2a0" id="3340082741251145158" />
+        <var name="knob_a2a0" id="3340082741251145158" />
+      </scope>
+      <scope id="3340082741250319439" at="110,5,119,29">
+        <var name="knobInputModel_d0" id="3340082741250319439" />
+        <var name="knobPanel_d0" id="3340082741250319439" />
+        <var name="knob_d0" id="3340082741250319439" />
+      </scope>
+      <scope id="4899373474420607840" at="29,3,39,5" />
+      <scope id="5212052969219925836" at="73,7,84,41">
+        <var name="sliderLabel_b0a" id="5212052969219925836" />
+        <var name="sliderPanel_b0a" id="5212052969219925836" />
+        <var name="slider_b0a" id="5212052969219925836" />
+      </scope>
+      <scope id="3340082741250319560" at="121,5,132,31">
+        <var name="sliderLabel_e0" id="3340082741250319560" />
+        <var name="sliderPanel_e0" id="3340082741250319560" />
+        <var name="slider_e0" id="3340082741250319560" />
+      </scope>
+      <scope id="3340082741251145034" at="86,7,103,38">
+        <var name="subPanel_c0a" id="3340082741251145034" />
+      </scope>
+      <scope id="5212052969219923626" at="57,5,106,28">
+        <var name="subPanel_a0" id="5212052969219923626" />
+      </scope>
+      <scope id="4899373474420607840" at="47,23,137,21" />
+      <scope id="4899373474420607840" at="47,0,139,0" />
+      <unit id="4899373474420607840" at="21,0,150,0" name="SynthLang.sandbox.SimpleSynthView" />
     </file>
   </root>
 </debug-info>

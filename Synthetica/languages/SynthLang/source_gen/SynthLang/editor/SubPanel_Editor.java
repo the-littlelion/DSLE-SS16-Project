@@ -85,7 +85,7 @@ public class SubPanel_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createComponent_vj0vn8_c0a(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "SynthLang.editor.ControlParameters");
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "SynthLang.editor.ControlParameters_component");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

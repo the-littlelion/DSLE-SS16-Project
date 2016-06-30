@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="24,49,45,5" name="SynthLang.actions.QueriesGenerated$1" />
+      <unit at="21,0,52,0" name="SynthLang.actions.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:447dd9b7-1fb6-4e00-83a7-539304377401(SynthLang.actions)/3340082741251427986">
+    <file name="QueriesGenerated.java">
+      <node id="3340082741251431641" at="25,94,26,200" concept="0" />
+      <node id="3340082741251432944" at="26,200,27,40" concept="1" />
+      <node id="3340082741251428554" at="48,196,49,206" concept="1" />
+      <node id="3340082741251428477" at="48,0,51,0" concept="2" trace="sideTransformHintSubstituteActionsBuilder_Precondition_Port_3340082741251428477#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <scope id="3340082741251428478" at="48,196,49,206" />
+      <scope id="3340082741251431297" at="25,94,27,40" />
+      <scope id="3340082741251428477" at="48,0,51,0">
+        <var name="_context" id="3340082741251428477" />
+        <var name="operationContext" id="3340082741251428477" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

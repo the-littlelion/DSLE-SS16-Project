@@ -4,6 +4,9 @@
     <file name="AbstractGuiElement_BehaviorDescriptor.java">
       <unit at="16,0,34,0" name="SynthLang.behavior.AbstractGuiElement_BehaviorDescriptor" />
     </file>
+    <file name="AbstractSound_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.AbstractSound_BehaviorDescriptor" />
+    </file>
     <file name="ConnectionList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.ConnectionList_BehaviorDescriptor" />
     </file>
@@ -20,13 +23,25 @@
       <unit at="11,0,20,0" name="SynthLang.behavior.ControlSlider_BehaviorDescriptor" />
     </file>
     <file name="MainPanel_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="SynthLang.behavior.MainPanel_BehaviorDescriptor" />
+      <unit at="15,0,30,0" name="SynthLang.behavior.MainPanel_BehaviorDescriptor" />
+    </file>
+    <file name="Port_BehaviorDescriptor.java">
+      <unit at="16,0,34,0" name="SynthLang.behavior.Port_BehaviorDescriptor" />
+    </file>
+    <file name="SoundGeneratorSawToothBL_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSawToothBL_BehaviorDescriptor" />
+    </file>
+    <file name="SoundGeneratorSawToothDPW_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSawToothDPW_BehaviorDescriptor" />
+    </file>
+    <file name="SoundGeneratorSawTooth_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSawTooth_BehaviorDescriptor" />
+    </file>
+    <file name="SoundGeneratorSine_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSine_BehaviorDescriptor" />
     </file>
     <file name="SoundList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.SoundList_BehaviorDescriptor" />
-    </file>
-    <file name="Sound_BehaviorDescriptor.java">
-      <unit at="16,0,34,0" name="SynthLang.behavior.Sound_BehaviorDescriptor" />
     </file>
     <file name="SubPanel_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.SubPanel_BehaviorDescriptor" />
