@@ -46,6 +46,6 @@ public class QueriesGenerated {
     return result;
   }
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_Port_3340082741251428477(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    return SPropertyOperations.getBoolean(_context.getSourceNode(), MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig")) == false;
+    return SPropertyOperations.getBoolean_def(_context.getSourceNode(), MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig"), "false") == false;
   }
 }

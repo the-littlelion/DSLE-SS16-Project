@@ -14,6 +14,15 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x43fe12378cc7cc9eL) {
       return new Synthesizer_Constraints();
     }
+    if (id == 0x43fe12378cc7cd74L) {
+      return new Connection_Constraints();
+    }
+    if (id == 0x43fe12378cc7cd4aL) {
+      return new AbstractSound_Constraints();
+    }
+    if (id == 0x2e5a5b8e811ca259L) {
+      return new ControlConnection_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
 }

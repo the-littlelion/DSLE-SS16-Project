@@ -28,10 +28,13 @@ public class Port_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_nejer9_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_nejer9_b0(editorContext, node));
-    if (renderingCondition_nejer9_a2a(node, editorContext)) {
-      editorCell.addEditorCell(this.createConstant_nejer9_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_nejer9_c0(editorContext, node));
+    if (renderingCondition_nejer9_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_nejer9_d0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createAlternation_nejer9_d0(editorContext, node));
+    if (renderingCondition_nejer9_a4a(node, editorContext)) {
+      editorCell.addEditorCell(this.createComponent_nejer9_e0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createConstant_nejer9_a0(EditorContext editorContext, SNode node) {
@@ -51,6 +54,9 @@ public class Port_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_name");
+    Style style = new StyleImpl();
+    BaseLanguageStyle_StyleSheet.apply_Parameter(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -60,44 +66,40 @@ public class Port_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_nejer9_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_nejer9_c0");
+  private EditorCell createProperty_nejer9_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("hasConfig");
+    provider.setNoTargetText("<no config>");
+    provider.setAllowsEmptyTarget(true);
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_hasConfig");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.RT_ANCHOR_TAG, 0, "default_RTransform");
+    BaseLanguageStyle_StyleSheet.apply_SecondLevel(style, editorCell);
     editorCell.getStyle().putAll(style);
-    PortConfig_delete.setCellActions(editorCell, node, editorContext);
-    editorCell.setDefaultText("");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
-  private static boolean renderingCondition_nejer9_a2a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig"));
-  }
-  private EditorCell createAlternation_nejer9_d0(EditorContext editorContext, SNode node) {
-    boolean alternationCondition = true;
-    alternationCondition = Port_Editor.renderingCondition_nejer9_a3a(node, editorContext);
-    EditorCell editorCell = null;
-    if (alternationCondition) {
-      editorCell = this.createComponent_nejer9_a3a(editorContext, node);
-    } else {
-      editorCell = this.createConstant_nejer9_a3a(editorContext, node);
-    }
+  private EditorCell createConstant_nejer9_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_nejer9_d0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
   private static boolean renderingCondition_nejer9_a3a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig"));
+    return SPropertyOperations.getBoolean_def(node, MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig"), "false");
   }
-  private EditorCell createComponent_nejer9_a3a(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_nejer9_e0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "SynthLang.editor.PortParameters_component");
     return editorCell;
   }
-  private EditorCell createConstant_nejer9_a3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "< no configuration >");
-    editorCell.setCellId("Constant_nejer9_a3a");
-    Style style = new StyleImpl();
-    BaseLanguageStyle_StyleSheet.apply_Annotation(style, editorCell);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
+  private static boolean renderingCondition_nejer9_a4a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean_def(node, MetaAdapterFactory.getProperty(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, 0x2e5a5b8e80b1e952L, "hasConfig"), "false");
   }
 }

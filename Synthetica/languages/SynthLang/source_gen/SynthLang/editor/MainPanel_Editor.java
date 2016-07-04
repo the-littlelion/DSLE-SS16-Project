@@ -36,7 +36,7 @@ public class MainPanel_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.DRAW_BORDER, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setFoldable(true);
-    editorCell.setFoldedCell(this.createConstant_8l1tu8_a0_0(editorContext, node));
+    editorCell.setFoldedCell(this.createCollection_8l1tu8_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_8l1tu8_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_8l1tu8_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_8l1tu8_c0(editorContext, node));
@@ -44,8 +44,9 @@ public class MainPanel_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_8l1tu8_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_8l1tu8_f0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_8l1tu8_g0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_8l1tu8_h0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_8l1tu8_i0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_8l1tu8_h0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8l1tu8_i0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_8l1tu8_j0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_8l1tu8_a0(EditorContext editorContext, SNode node) {
@@ -125,9 +126,17 @@ public class MainPanel_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_8l1tu8_h0(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_8l1tu8_h0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "SynthLang.editor.PanelParameters_component");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createConstant_8l1tu8_i0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_8l1tu8_h0");
+    editorCell.setCellId("Constant_8l1tu8_i0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
@@ -135,24 +144,24 @@ public class MainPanel_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_8l1tu8_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8l1tu8_j0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_8l1tu8_i0");
+    editorCell.setCellId("Collection_8l1tu8_j0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createRefNodeList_8l1tu8_a8a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_8l1tu8_a9a(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefNodeList_8l1tu8_a8a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new MainPanel_Editor.contentsListHandler_8l1tu8_a8a(node, "contents", editorContext);
+  private EditorCell createRefNodeList_8l1tu8_a9a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new MainPanel_Editor.contentsListHandler_8l1tu8_a9a(node, "contents", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_contents");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class contentsListHandler_8l1tu8_a8a extends RefNodeListHandler {
-    public contentsListHandler_8l1tu8_a8a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class contentsListHandler_8l1tu8_a9a extends RefNodeListHandler {
+    public contentsListHandler_8l1tu8_a9a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -183,12 +192,25 @@ public class MainPanel_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createConstant_8l1tu8_a0_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "front panel ...");
-    editorCell.setCellId("Constant_8l1tu8_a0_0");
+  private EditorCell createCollection_8l1tu8_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_8l1tu8_a0");
+    editorCell.addEditorCell(this.createConstant_8l1tu8_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8l1tu8_b0a(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createConstant_8l1tu8_a0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "front panel");
+    editorCell.setCellId("Constant_8l1tu8_a0a");
     Style style = new StyleImpl();
     highlightedKeyword_StyleSheet.apply_HighlightedKeyword(style, editorCell);
     editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_8l1tu8_b0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "...");
+    editorCell.setCellId("Constant_8l1tu8_b0a");
     editorCell.setDefaultText("");
     return editorCell;
   }

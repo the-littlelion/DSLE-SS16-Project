@@ -30,13 +30,12 @@
     <classNode dependClassName="com.jsyn.Synthesizer" />
     <classNode dependClassName="com.jsyn.ports.UnitInputPort" />
     <classNode dependClassName="com.jsyn.ports.UnitPort" />
-    <classNode dependClassName="com.jsyn.unitgen.FilterHighPass" />
-    <classNode dependClassName="com.jsyn.unitgen.FilterPeakingEQ" />
+    <classNode dependClassName="com.jsyn.unitgen.Add" />
+    <classNode dependClassName="com.jsyn.unitgen.ImpulseOscillator" />
     <classNode dependClassName="com.jsyn.unitgen.LineOut" />
-    <classNode dependClassName="com.jsyn.unitgen.LinearRamp" />
-    <classNode dependClassName="com.jsyn.unitgen.SawtoothOscillatorBL" />
+    <classNode dependClassName="com.jsyn.unitgen.SawtoothOscillator" />
+    <classNode dependClassName="com.jsyn.unitgen.SineOscillator" />
     <classNode dependClassName="com.jsyn.unitgen.UnitGenerator" />
-    <classNode dependClassName="com.jsyn.unitgen.UnitOscillator" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
@@ -51,7 +50,8 @@
     <classNode dependClassName="com.jsyn.swing.RotaryTextController" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Font" />
-    <classNode dependClassName="java.awt.GridLayout" />
+    <classNode dependClassName="java.awt.GridBagConstraints" />
+    <classNode dependClassName="java.awt.GridBagLayout" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.ImageIcon" />

@@ -85,6 +85,7 @@ public class ControlButton_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_pcmhku_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

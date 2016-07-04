@@ -25,6 +25,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d75fbcL, "SynthLang.structure.ControlButton"))) {
         return Collections.<ConceptEditor>singletonList(new ControlButton_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e811ca259L, "SynthLang.structure.ControlConnection"))) {
+        return Collections.<ConceptEditor>singletonList(new ControlConnection_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x4854ee8f94d7536fL, "SynthLang.structure.ControlKnob"))) {
         return Collections.<ConceptEditor>singletonList(new ControlKnob_Editor());
       }
@@ -37,6 +40,12 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, "SynthLang.structure.Port"))) {
         return Collections.<ConceptEditor>singletonList(new Port_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x73ae09d1ab6f50fbL, "SynthLang.structure.SoundConnectionAdd"))) {
+        return Collections.<ConceptEditor>singletonList(new SoundConnectionAdd_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b8f2b1L, "SynthLang.structure.SoundGeneratorImpulse"))) {
+        return Collections.<ConceptEditor>singletonList(new SoundGeneratorImpulse_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b038efL, "SynthLang.structure.SoundGeneratorSawTooth"))) {
         return Collections.<ConceptEditor>singletonList(new SoundGeneratorSawTooth_Editor());
       }
@@ -48,6 +57,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b03a93L, "SynthLang.structure.SoundGeneratorSine"))) {
         return Collections.<ConceptEditor>singletonList(new SoundGeneratorSine_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80c2596aL, "SynthLang.structure.SoundLineOut"))) {
+        return Collections.<ConceptEditor>singletonList(new SoundLineOut_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d50bL, "SynthLang.structure.SoundList"))) {
         return Collections.<ConceptEditor>singletonList(new SoundList_Editor());
@@ -68,6 +80,16 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7d475L, "SynthLang.structure.AbstractGuiElement"))) {
         if ("SynthLang.editor.ControlParameters_component".equals(editorComponentId)) {
           return Collections.<ConceptEditorComponent>singletonList(new ControlParameters_component());
+        }
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cd4aL, "SynthLang.structure.AbstractSound"))) {
+        if ("SynthLang.editor.Sound_component".equals(editorComponentId)) {
+          return Collections.<ConceptEditorComponent>singletonList(new Sound_component());
+        }
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getInterfaceConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x42b9a3d32329ad49L, "SynthLang.structure.IPanel"))) {
+        if ("SynthLang.editor.PanelParameters_component".equals(editorComponentId)) {
+          return Collections.<ConceptEditorComponent>singletonList(new PanelParameters_component());
         }
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x2e5a5b8e80b0127aL, "SynthLang.structure.Port"))) {

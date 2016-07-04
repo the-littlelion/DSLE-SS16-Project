@@ -1,3 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="SynthLang.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:16c0b325-691e-4c75-b003-ecc5fb1396b3(SynthLang.typesystem)/8335610756438234995">
+    <file name="check_Connection_NonTypesystemRule.java">
+      <node id="8335610756438235065" at="18,123,19,344" concept="2" />
+      <node id="8335610756438236809" at="19,344,20,343" concept="2" />
+      <node id="8335610756438234995" at="22,50,23,138" concept="4" />
+      <node id="8335610756438234995" at="25,68,26,102" concept="0" />
+      <node id="8335610756438234995" at="25,68,26,102" concept="4" />
+      <node id="8335610756438234995" at="28,30,29,17" concept="4" />
+      <node id="8335610756438234995" at="16,0,18,0" concept="1" trace="check_Connection_NonTypesystemRule#()V" />
+      <node id="8335610756438234995" at="22,0,25,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8335610756438234995" at="25,0,28,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8335610756438234995" at="28,0,31,0" concept="3" trace="overrides#()Z" />
+      <node id="8335610756438234995" at="18,0,22,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8335610756438234995" at="16,47,16,47" />
+      <scope id="8335610756438234995" at="22,50,23,138" />
+      <scope id="8335610756438234995" at="25,68,26,102" />
+      <scope id="8335610756438234995" at="28,30,29,17" />
+      <scope id="8335610756438234995" at="16,0,18,0" />
+      <scope id="8335610756438234996" at="18,123,20,343" />
+      <scope id="8335610756438234995" at="22,0,25,0" />
+      <scope id="8335610756438234995" at="25,0,28,0">
+        <var name="argument" id="8335610756438234995" />
+      </scope>
+      <scope id="8335610756438234995" at="28,0,31,0" />
+      <scope id="8335610756438234995" at="18,0,22,0">
+        <var name="connection" id="8335610756438234995" />
+        <var name="status" id="8335610756438234995" />
+        <var name="typeCheckingContext" id="8335610756438234995" />
+      </scope>
+      <unit id="8335610756438234995" at="15,0,32,0" name="SynthLang.typesystem.check_Connection_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
 

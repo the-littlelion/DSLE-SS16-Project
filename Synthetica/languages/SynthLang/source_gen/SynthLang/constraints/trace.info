@@ -3,36 +3,38 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="9,0,20,0" name="SynthLang.constraints.ConstraintsAspectDescriptor" />
+      <unit at="9,0,29,0" name="SynthLang.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints)/3340082741245507610">
     <file name="Synthesizer_Constraints.java">
-      <node id="3340082741245507610" at="16,36,17,98" concept="8" />
-      <node id="3340082741245507610" at="20,88,21,123" concept="5" />
-      <node id="3340082741245507610" at="24,40,25,20" concept="6" />
-      <node id="3340082741245507610" at="28,70,29,37" concept="5" />
-      <node id="1667020190436603843" at="30,9,31,34" concept="5" />
+      <node id="3340082741245507610" at="16,36,17,98" concept="10" />
+      <node id="3340082741245507610" at="20,88,21,123" concept="6" />
+      <node id="3340082741245507610" at="24,40,25,20" concept="7" />
+      <node id="3340082741245507610" at="28,70,29,37" concept="6" />
+      <node id="1667020190436603843" at="30,9,31,34" concept="6" />
       <node id="1667020190436643314" at="32,71,33,120" concept="2" />
-      <node id="1667020190436603222" at="34,11,35,25" concept="6" />
-      <node id="3340082741245507610" at="38,7,39,22" concept="6" />
-      <node id="1667020190436645267" at="41,55,42,43" concept="6" />
+      <node id="1667020190436603222" at="34,11,35,25" concept="7" />
+      <node id="3340082741245507610" at="38,7,39,22" concept="7" />
+      <node id="1667020190436645267" at="41,55,42,43" concept="7" />
       <node id="3340082741245507610" at="16,0,19,0" concept="1" trace="Synthesizer_Constraints#()V" />
-      <node id="1667020190436600803" at="31,34,34,11" concept="3" />
-      <node id="1667020190436645267" at="41,0,44,0" concept="7" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="3340082741245507610" at="23,0,27,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="1667020190436600803" at="31,34,34,11" concept="4" />
+      <node id="1667020190436645267" at="41,0,44,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="3340082741245507610" at="23,0,27,0" concept="5" trace="hasOwnValidator#()Z" />
       <node id="3340082741245507610" at="29,37,36,9" concept="0" />
-      <node id="3340082741245507610" at="27,0,38,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3340082741245507610" at="27,0,38,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
       <node id="3340082741245507610" at="21,123,38,7" concept="2" />
-      <node id="3340082741245507610" at="19,0,41,0" concept="4" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <node id="3340082741245507610" at="19,0,41,0" concept="5" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
       <scope id="3340082741245507610" at="16,36,17,98" />
       <scope id="3340082741245507610" at="24,40,25,20" />
       <scope id="1667020190436600805" at="32,71,33,120" />
@@ -58,6 +60,135 @@
       <scope id="3340082741245507610" at="19,0,41,0" />
       <unit id="3340082741245507610" at="22,119,38,5" name="SynthLang.constraints.Synthesizer_Constraints$1" />
       <unit id="3340082741245507610" at="15,0,45,0" name="SynthLang.constraints.Synthesizer_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints)/3340082741252917925">
+    <file name="Connection_Constraints.java">
+      <node id="3340082741252917925" at="23,35,24,98" concept="10" />
+      <node id="3340082741252917925" at="27,98,28,135" concept="6" />
+      <node id="3340082741252917925" at="31,44,32,20" concept="7" />
+      <node id="3340082741253214455" at="39,142,40,371" concept="7" />
+      <node id="3340082741252917925" at="43,63,44,58" concept="7" />
+      <node id="3340082741252917925" at="48,7,49,22" concept="7" />
+      <node id="3340082741252917925" at="51,0,52,0" concept="8" trace="breakingNode_nx8s2y_a0a1a0a0a1a0b0a1a1" />
+      <node id="3340082741252917925" at="23,0,26,0" concept="1" trace="Connection_Constraints#()V" />
+      <node id="3340082741252917925" at="30,0,34,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="3340082741252917925" at="38,0,42,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="3340082741252917925" at="42,0,46,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3340082741252917925" at="36,56,46,10" concept="7" />
+      <node id="3340082741252917925" at="34,0,48,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3340082741252917925" at="28,135,48,7" concept="2" />
+      <node id="3340082741252917925" at="26,0,51,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="3340082741252917925" at="23,35,24,98" />
+      <scope id="3340082741252917925" at="31,44,32,20" />
+      <scope id="3340082741253214274" at="39,142,40,371" />
+      <scope id="3340082741252917925" at="43,63,44,58" />
+      <scope id="3340082741252917925" at="23,0,26,0" />
+      <scope id="3340082741252917925" at="30,0,34,0" />
+      <scope id="3340082741252917925" at="38,0,42,0">
+        <var name="_context" id="3340082741252917925" />
+        <var name="operationContext" id="3340082741252917925" />
+      </scope>
+      <scope id="3340082741252917925" at="42,0,46,0" />
+      <scope id="3340082741252917925" at="36,56,46,10" />
+      <scope id="3340082741252917925" at="34,0,48,0" />
+      <scope id="3340082741252917925" at="27,98,49,22">
+        <var name="references" id="3340082741252917925" />
+      </scope>
+      <scope id="3340082741252917925" at="26,0,51,0" />
+      <unit id="3340082741252917925" at="37,19,46,9" name="SynthLang.constraints.Connection_Constraints$2" />
+      <unit id="3340082741252917925" at="29,128,48,5" name="SynthLang.constraints.Connection_Constraints$1" />
+      <unit id="3340082741252917925" at="22,0,53,0" name="SynthLang.constraints.Connection_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints)/3340082741253471133">
+    <file name="AbstractSound_Constraints.java">
+      <node id="3340082741253471133" at="20,38,21,98" concept="10" />
+      <node id="3340082741253471133" at="24,88,25,123" concept="6" />
+      <node id="3340082741253471133" at="28,40,29,20" concept="7" />
+      <node id="3340082741253471133" at="32,70,33,37" concept="6" />
+      <node id="8335610756436962263" at="35,71,36,25" concept="7" />
+      <node id="8335610756436836521" at="37,11,38,115" concept="6" />
+      <node id="8335610756436517403" at="39,75,40,25" concept="7" />
+      <node id="3340082741253501714" at="43,395,44,27" concept="7" />
+      <node id="3340082741253502636" at="46,11,47,22" concept="7" />
+      <node id="3340082741253471133" at="50,7,51,22" concept="7" />
+      <node id="3340082741253471133" at="20,0,23,0" concept="1" trace="AbstractSound_Constraints#()V" />
+      <node id="8335610756436960466" at="34,9,37,11" concept="4" />
+      <node id="8335610756436514744" at="38,115,41,11" concept="4" />
+      <node id="3340082741253499887" at="42,391,45,13" concept="4" />
+      <node id="3340082741253471133" at="27,0,31,0" concept="5" trace="hasOwnValidator#()Z" />
+      <node id="3340082741253498223" at="41,11,46,11" concept="3" />
+      <node id="3340082741253471133" at="33,37,48,9" concept="0" />
+      <node id="3340082741253471133" at="31,0,50,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3340082741253471133" at="25,123,50,7" concept="2" />
+      <node id="3340082741253471133" at="23,0,53,0" concept="5" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="3340082741253471133" at="20,38,21,98" />
+      <scope id="3340082741253471133" at="28,40,29,20" />
+      <scope id="8335610756436960468" at="35,71,36,25" />
+      <scope id="8335610756436514745" at="39,75,40,25" />
+      <scope id="3340082741253499889" at="43,395,44,27" />
+      <scope id="3340082741253471133" at="20,0,23,0" />
+      <scope id="3340082741253498229" at="42,391,45,13" />
+      <scope id="3340082741253471133" at="27,0,31,0" />
+      <scope id="3340082741253498223" at="41,11,46,11">
+        <var name="n" id="3340082741253498225" />
+      </scope>
+      <scope id="3340082741253471346" at="34,9,47,22">
+        <var name="validatedString" id="8335610756436836524" />
+      </scope>
+      <scope id="3340082741253471133" at="32,70,48,9">
+        <var name="propertyName" id="3340082741253471133" />
+      </scope>
+      <scope id="3340082741253471133" at="31,0,50,0">
+        <var name="node" id="3340082741253471133" />
+        <var name="propertyValue" id="3340082741253471133" />
+      </scope>
+      <scope id="3340082741253471133" at="24,88,51,22">
+        <var name="properties" id="3340082741253471133" />
+      </scope>
+      <scope id="3340082741253471133" at="23,0,53,0" />
+      <unit id="3340082741253471133" at="26,119,50,5" name="SynthLang.constraints.AbstractSound_Constraints$1" />
+      <unit id="3340082741253471133" at="19,0,54,0" name="SynthLang.constraints.AbstractSound_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:1ac3782d-9309-4a2b-b205-751025c6985a(SynthLang.constraints)/3340082741258481481">
+    <file name="ControlConnection_Constraints.java">
+      <node id="3340082741258481481" at="23,42,24,98" concept="10" />
+      <node id="3340082741258481481" at="27,98,28,135" concept="6" />
+      <node id="3340082741258481481" at="31,44,32,20" concept="7" />
+      <node id="3340082741258481485" at="39,142,40,371" concept="7" />
+      <node id="3340082741258481481" at="43,63,44,58" concept="7" />
+      <node id="3340082741258481481" at="48,7,49,22" concept="7" />
+      <node id="3340082741258481481" at="51,0,52,0" concept="8" trace="breakingNode_shuvvt_a0a1a0a0a1a0b0a1a1" />
+      <node id="3340082741258481481" at="23,0,26,0" concept="1" trace="ControlConnection_Constraints#()V" />
+      <node id="3340082741258481481" at="30,0,34,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="3340082741258481481" at="38,0,42,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="3340082741258481481" at="42,0,46,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3340082741258481481" at="36,56,46,10" concept="7" />
+      <node id="3340082741258481481" at="34,0,48,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3340082741258481481" at="28,135,48,7" concept="2" />
+      <node id="3340082741258481481" at="26,0,51,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="3340082741258481481" at="23,42,24,98" />
+      <scope id="3340082741258481481" at="31,44,32,20" />
+      <scope id="3340082741258481484" at="39,142,40,371" />
+      <scope id="3340082741258481481" at="43,63,44,58" />
+      <scope id="3340082741258481481" at="23,0,26,0" />
+      <scope id="3340082741258481481" at="30,0,34,0" />
+      <scope id="3340082741258481481" at="38,0,42,0">
+        <var name="_context" id="3340082741258481481" />
+        <var name="operationContext" id="3340082741258481481" />
+      </scope>
+      <scope id="3340082741258481481" at="42,0,46,0" />
+      <scope id="3340082741258481481" at="36,56,46,10" />
+      <scope id="3340082741258481481" at="34,0,48,0" />
+      <scope id="3340082741258481481" at="27,98,49,22">
+        <var name="references" id="3340082741258481481" />
+      </scope>
+      <scope id="3340082741258481481" at="26,0,51,0" />
+      <unit id="3340082741258481481" at="37,19,46,9" name="SynthLang.constraints.ControlConnection_Constraints$2" />
+      <unit id="3340082741258481481" at="29,128,48,5" name="SynthLang.constraints.ControlConnection_Constraints$1" />
+      <unit id="3340082741258481481" at="22,0,53,0" name="SynthLang.constraints.ControlConnection_Constraints" />
     </file>
   </root>
 </debug-info>

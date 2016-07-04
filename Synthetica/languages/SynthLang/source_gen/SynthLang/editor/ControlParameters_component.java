@@ -43,7 +43,7 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Size:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "coordinates:");
     editorCell.setCellId("Constant_gkrraa_a0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Label(style, editorCell);
@@ -52,18 +52,18 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "width");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x");
     editorCell.setCellId("Constant_gkrraa_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_gkrraa_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("width");
-    provider.setNoTargetText("<no width>");
+    provider.setRole("gridPosX");
+    provider.setNoTargetText("<no gridPosX>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("CP_property_width");
+    editorCell.setCellId("CP_property_gridPosX");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -83,18 +83,18 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "height");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y");
     editorCell.setCellId("Constant_gkrraa_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_gkrraa_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("height");
-    provider.setNoTargetText("<no height>");
+    provider.setRole("gridPosY");
+    provider.setNoTargetText("<no gridPosY>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("CP_property_height");
+    editorCell.setCellId("CP_property_gridPosY");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
@@ -109,7 +109,7 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Panel coordinates:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "grid span:");
     editorCell.setCellId("Constant_gkrraa_g0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_Label(style, editorCell);
@@ -118,18 +118,18 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "x");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "cells x");
     editorCell.setCellId("Constant_gkrraa_h0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_gkrraa_i0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("gridPosX");
-    provider.setNoTargetText("<no gridPosX>");
+    provider.setRole("spanX");
+    provider.setNoTargetText("<no spanX>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("CP_property_gridPosX");
+    editorCell.setCellId("CP_property_spanX");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -149,21 +149,20 @@ public class ControlParameters_component implements ConceptEditorComponent {
     return editorCell;
   }
   private EditorCell createConstant_gkrraa_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "y");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "cells y");
     editorCell.setCellId("Constant_gkrraa_k0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_gkrraa_l0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("gridPosY");
-    provider.setNoTargetText("<no gridPosY>");
+    provider.setRole("spanY");
+    provider.setNoTargetText("<no spanY>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("CP_property_gridPosY");
+    editorCell.setCellId("CP_property_spanY");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_NumericLiteral(style, editorCell);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

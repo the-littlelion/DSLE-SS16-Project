@@ -14,7 +14,7 @@ import jetbrains.mps.scope.Scope;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public abstract class AbstractSound_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
+public abstract class AbstractSound_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, IHasInputPort_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public String virtual_getFqName_1213877404258(SNode __thisNode__) {
     return null;
   }

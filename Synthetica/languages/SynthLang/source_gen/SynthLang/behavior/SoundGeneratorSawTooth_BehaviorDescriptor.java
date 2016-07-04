@@ -9,7 +9,7 @@ package SynthLang.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class SoundGeneratorSawTooth_BehaviorDescriptor extends AbstractSound_BehaviorDescriptor {
+public class SoundGeneratorSawTooth_BehaviorDescriptor extends AbstractSound_BehaviorDescriptor implements IHasOutputPort_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {

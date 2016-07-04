@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="13,0,28,0" name="SynthLang.actions.ActionAspectDescriptorImpl" />
+    </file>
     <file name="QueriesGenerated.java">
       <unit at="24,49,45,5" name="SynthLang.actions.QueriesGenerated$1" />
       <unit at="21,0,52,0" name="SynthLang.actions.QueriesGenerated" />
@@ -12,15 +16,31 @@
   <root nodeRef="r:447dd9b7-1fb6-4e00-83a7-539304377401(SynthLang.actions)/3340082741251427986">
     <file name="QueriesGenerated.java">
       <node id="3340082741251431641" at="25,94,26,200" concept="0" />
-      <node id="3340082741251432944" at="26,200,27,40" concept="1" />
-      <node id="3340082741251428554" at="48,196,49,206" concept="1" />
-      <node id="3340082741251428477" at="48,0,51,0" concept="2" trace="sideTransformHintSubstituteActionsBuilder_Precondition_Port_3340082741251428477#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
-      <scope id="3340082741251428478" at="48,196,49,206" />
+      <node id="3340082741251432944" at="26,200,27,40" concept="2" />
+      <node id="3340082741251428554" at="48,196,49,219" concept="2" />
+      <node id="3340082741251428477" at="48,0,51,0" concept="3" trace="sideTransformHintSubstituteActionsBuilder_Precondition_Port_3340082741251428477#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/SideTransformPreconditionContext;)Z" />
+      <scope id="3340082741251428478" at="48,196,49,219" />
       <scope id="3340082741251431297" at="25,94,27,40" />
       <scope id="3340082741251428477" at="48,0,51,0">
         <var name="_context" id="3340082741251428477" />
         <var name="operationContext" id="3340082741251428477" />
       </scope>
+    </file>
+  </root>
+  <root nodeRef="r:447dd9b7-1fb6-4e00-83a7-539304377401(SynthLang.actions)/3347507059715037548">
+    <file name="DefaultNodeFactory_.java">
+      <node id="3347507059715037652" at="13,91,14,174" concept="0" />
+      <node id="3347507059715038796" at="14,174,15,174" concept="0" />
+      <node id="3347507059715037549" at="13,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3347507059715037549" at="13,91,15,174" />
+      <scope id="3347507059715037549" at="13,0,17,0">
+        <var name="enclosingNode" id="3347507059715037549" />
+        <var name="model" id="3347507059715037549" />
+        <var name="newNode" id="3347507059715037549" />
+        <var name="sampleNode" id="3347507059715037549" />
+      </scope>
+      <unit id="3347507059715037549" at="12,0,18,0" name="SynthLang.actions.DefaultNodeFactory_$NodeFactory_3347507059715037549" />
+      <unit id="3347507059715037548" at="11,0,19,0" name="SynthLang.actions.DefaultNodeFactory_" />
     </file>
   </root>
 </debug-info>

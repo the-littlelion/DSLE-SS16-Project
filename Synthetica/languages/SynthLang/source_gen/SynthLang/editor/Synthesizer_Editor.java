@@ -19,9 +19,6 @@ import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.MPSFonts;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
-import jetbrains.mps.nodeEditor.MPSColors;
 
 public class Synthesizer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -84,14 +81,9 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createRefNode_5zxs82_a3a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_5zxs82_b3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5zxs82_c3a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_5zxs82_c3a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_5zxs82_d3a(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_5zxs82_e3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5zxs82_f3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5zxs82_g3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5zxs82_h3a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_5zxs82_i3a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5zxs82_j3a(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefNode_5zxs82_a3a(EditorContext editorContext, SNode node) {
@@ -138,35 +130,12 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_5zxs82_c3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "sounds ");
-    editorCell.setCellId("Constant_5zxs82_c3a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD_ITALIC);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
-    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_5zxs82_d3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_5zxs82_d3a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_5zxs82_e3a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Synthesizer_Editor.soundsSingleRoleHandler_5zxs82_e3a(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cc9eL, 0x43fe12378cc7d4e0L, "sounds"), editorContext);
+  private EditorCell createRefNode_5zxs82_c3a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Synthesizer_Editor.soundsSingleRoleHandler_5zxs82_c3a(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cc9eL, 0x43fe12378cc7d4e0L, "sounds"), editorContext);
     return provider.createCell();
   }
-  private class soundsSingleRoleHandler_5zxs82_e3a extends SingleRoleCellProvider {
-    public soundsSingleRoleHandler_5zxs82_e3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class soundsSingleRoleHandler_5zxs82_c3a extends SingleRoleCellProvider {
+    public soundsSingleRoleHandler_5zxs82_c3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -182,7 +151,6 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
       EditorContext editorContext = myEditorContext;
-      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
       editorCell.getStyle().putAll(style);
     }
@@ -197,46 +165,21 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
       return "<no sounds>";
     }
   }
-  private EditorCell createConstant_5zxs82_f3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_5zxs82_f3a");
+  private EditorCell createConstant_5zxs82_d3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_5zxs82_d3a");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_5zxs82_g3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "connections ");
-    editorCell.setCellId("Constant_5zxs82_g3a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD_ITALIC);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
-    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_5zxs82_h3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_5zxs82_h3a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNode_5zxs82_i3a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Synthesizer_Editor.connectionsSingleRoleHandler_5zxs82_i3a(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cc9eL, 0x43fe12378cc7d4e5L, "connections"), editorContext);
+  private EditorCell createRefNode_5zxs82_e3a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Synthesizer_Editor.connectionsSingleRoleHandler_5zxs82_e3a(node, MetaAdapterFactory.getContainmentLink(0x4367d71c7d554642L, 0x8148026aeb16dfebL, 0x43fe12378cc7cc9eL, 0x43fe12378cc7d4e5L, "connections"), editorContext);
     return provider.createCell();
   }
-  private class connectionsSingleRoleHandler_5zxs82_i3a extends SingleRoleCellProvider {
-    public connectionsSingleRoleHandler_5zxs82_i3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class connectionsSingleRoleHandler_5zxs82_e3a extends SingleRoleCellProvider {
+    public connectionsSingleRoleHandler_5zxs82_e3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -252,7 +195,6 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
       Style style = new StyleImpl();
       SNode node = myOwnerNode;
       EditorContext editorContext = myEditorContext;
-      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
       editorCell.getStyle().putAll(style);
     }
@@ -266,15 +208,5 @@ public class Synthesizer_Editor extends DefaultNodeEditor {
     protected String getNoTargetText() {
       return "<no connections>";
     }
-  }
-  private EditorCell createConstant_5zxs82_j3a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_5zxs82_j3a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
-    style.set(StyleAttributes.FONT_SIZE, 0, 15);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
   }
 }

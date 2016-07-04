@@ -21,4 +21,5 @@ public class SimpleSynth extends JApplet {
       }
     });
   }
+
 }

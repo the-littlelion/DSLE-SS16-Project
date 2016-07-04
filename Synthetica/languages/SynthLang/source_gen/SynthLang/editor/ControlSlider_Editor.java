@@ -30,8 +30,10 @@ public class ControlSlider_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_fwfdx3_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_fwfdx3_b0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_fwfdx3_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_fwfdx3_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fwfdx3_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_fwfdx3_d0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_fwfdx3_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fwfdx3_f0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_fwfdx3_a0(EditorContext editorContext, SNode node) {
@@ -72,7 +74,36 @@ public class ControlSlider_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createComponent_fwfdx3_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fwfdx3_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Orientation");
+    editorCell.setCellId("Constant_fwfdx3_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_fwfdx3_d0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("orientation");
+    provider.setNoTargetText("<no orientation>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_orientation");
+    Style style = new StyleImpl();
+    BaseLanguageStyle_StyleSheet.apply_Parameter(style, editorCell);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createComponent_fwfdx3_e0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "SynthLang.editor.ControlParameters_component");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
@@ -80,11 +111,12 @@ public class ControlSlider_Editor extends DefaultNodeEditor {
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createConstant_fwfdx3_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fwfdx3_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_fwfdx3_d0");
+    editorCell.setCellId("Constant_fwfdx3_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

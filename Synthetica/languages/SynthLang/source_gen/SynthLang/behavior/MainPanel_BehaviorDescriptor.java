@@ -13,7 +13,7 @@ import org.jetbrains.mps.openapi.model.SNode;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class MainPanel_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ScopeProvider_BehaviorDescriptor {
+public class MainPanel_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IPanel_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public Scope virtual_getScope_3734116213129936182(SNode __thisNode__, SNode kind, SNode child) {
     return null;
   }

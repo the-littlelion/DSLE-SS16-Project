@@ -32,6 +32,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -53,7 +56,16 @@
         <child id="1177498207384" name="handler" index="Cncma" />
       </concept>
       <concept id="1177498227294" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_Handler" flags="in" index="Cnhdc" />
+      <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
+        <child id="1158700779049" name="nodeFactory" index="37WGs$" />
+      </concept>
+      <concept id="1158700725281" name="jetbrains.mps.lang.actions.structure.NodeFactory" flags="ig" index="37WvkG">
+        <reference id="1158700943156" name="applicableConcept" index="37XkoT" />
+        <child id="1158701448518" name="setupFunction" index="37ZfLb" />
+      </concept>
+      <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
       <concept id="1154622616118" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstitutePreconditionFunction" flags="in" index="3kRJcU" />
+      <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
         <property id="1215605257730" name="side" index="7I3sp" />
         <property id="1140829165817" name="transformTag" index="2uHTBK" />
@@ -127,6 +139,41 @@
           </node>
           <node concept="2h1dTh" id="2TqmSU0H5KN" role="Cn6ar">
             <property role="2h1i$Z" value="add configuration" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="2TOIYXprl_G">
+    <node concept="37WvkG" id="2TOIYXprl_H" role="37WGs$">
+      <ref role="37XkoT" to="p57r:4fY4zucLXhP" resolve="AbstractGuiElement" />
+      <node concept="37Y9Zx" id="2TOIYXprlAg" role="37ZfLb">
+        <node concept="3clFbS" id="2TOIYXprlAh" role="2VODD2">
+          <node concept="3clFbF" id="2TOIYXprlBk" role="3cqZAp">
+            <node concept="37vLTI" id="2TOIYXprlOK" role="3clFbG">
+              <node concept="3cmrfG" id="2TOIYXprlPK" role="37vLTx">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="2OqwBi" id="2TOIYXprlDN" role="37vLTJ">
+                <node concept="1r4Lsj" id="2TOIYXprlBj" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2TOIYXprlIR" role="2OqNvi">
+                  <ref role="3TsBF5" to="p57r:4xkVCYkPPyo" resolve="spanX" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="2TOIYXprlTc" role="3cqZAp">
+            <node concept="37vLTI" id="2TOIYXprmbT" role="3clFbG">
+              <node concept="3cmrfG" id="2TOIYXprmcq" role="37vLTx">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="2OqwBi" id="2TOIYXprlWW" role="37vLTJ">
+                <node concept="1r4Lsj" id="2TOIYXprlTa" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2TOIYXprm67" role="2OqNvi">
+                  <ref role="3TsBF5" to="p57r:4xkVCYkPPzK" resolve="spanY" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

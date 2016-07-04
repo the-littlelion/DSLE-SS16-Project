@@ -11,10 +11,13 @@
       <unit at="15,0,30,0" name="SynthLang.behavior.ConnectionList_BehaviorDescriptor" />
     </file>
     <file name="Connection_BehaviorDescriptor.java">
-      <unit at="16,0,34,0" name="SynthLang.behavior.Connection_BehaviorDescriptor" />
+      <unit at="15,0,30,0" name="SynthLang.behavior.Connection_BehaviorDescriptor" />
     </file>
     <file name="ControlButton_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.ControlButton_BehaviorDescriptor" />
+    </file>
+    <file name="ControlConnection_BehaviorDescriptor.java">
+      <unit at="15,0,30,0" name="SynthLang.behavior.ControlConnection_BehaviorDescriptor" />
     </file>
     <file name="ControlKnob_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.ControlKnob_BehaviorDescriptor" />
@@ -22,11 +25,29 @@
     <file name="ControlSlider_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.ControlSlider_BehaviorDescriptor" />
     </file>
+    <file name="IConnection_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="SynthLang.behavior.IConnection_BehaviorDescriptor" />
+    </file>
+    <file name="IHasInputPort_BehaviorDescriptor.java">
+      <unit at="12,0,15,0" name="SynthLang.behavior.IHasInputPort_BehaviorDescriptor" />
+    </file>
+    <file name="IHasOutputPort_BehaviorDescriptor.java">
+      <unit at="12,0,15,0" name="SynthLang.behavior.IHasOutputPort_BehaviorDescriptor" />
+    </file>
+    <file name="IPanel_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="SynthLang.behavior.IPanel_BehaviorDescriptor" />
+    </file>
     <file name="MainPanel_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.MainPanel_BehaviorDescriptor" />
     </file>
     <file name="Port_BehaviorDescriptor.java">
       <unit at="16,0,34,0" name="SynthLang.behavior.Port_BehaviorDescriptor" />
+    </file>
+    <file name="SoundConnectionAdd_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundConnectionAdd_BehaviorDescriptor" />
+    </file>
+    <file name="SoundGeneratorImpulse_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorImpulse_BehaviorDescriptor" />
     </file>
     <file name="SoundGeneratorSawToothBL_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSawToothBL_BehaviorDescriptor" />
@@ -40,11 +61,14 @@
     <file name="SoundGeneratorSine_BehaviorDescriptor.java">
       <unit at="11,0,20,0" name="SynthLang.behavior.SoundGeneratorSine_BehaviorDescriptor" />
     </file>
+    <file name="SoundLineOut_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="SynthLang.behavior.SoundLineOut_BehaviorDescriptor" />
+    </file>
     <file name="SoundList_BehaviorDescriptor.java">
       <unit at="15,0,30,0" name="SynthLang.behavior.SoundList_BehaviorDescriptor" />
     </file>
     <file name="SubPanel_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="SynthLang.behavior.SubPanel_BehaviorDescriptor" />
+      <unit at="12,0,21,0" name="SynthLang.behavior.SubPanel_BehaviorDescriptor" />
     </file>
     <file name="Synthesizer_BehaviorDescriptor.java">
       <unit at="18,0,42,0" name="SynthLang.behavior.Synthesizer_BehaviorDescriptor" />

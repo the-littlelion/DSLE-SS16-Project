@@ -52,7 +52,6 @@ public class SimpleSynthController {
       private static final long serialVersionUID = 2847198638476373364L;
       @Override
       public void actionPerformed(ActionEvent event) {
-        System.out.println("close with ESC" + event);
         frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
       }
     });
